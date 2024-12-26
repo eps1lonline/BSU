@@ -1,0 +1,16 @@
+id      name        time_check
+0    	Alice     	12:32     
+1    	Bob       	12:32     
+2    	Charlie   	12:32     
+3    	David     	12:32     
+4    	Eve       	12:32     
+5    	Frank     	12:32     
+6    	Grace     	12:32     
+7    	Hannah    	12:32     
+8    	Ivy       	12:32     
+9    	Jack      	12:32     
+10   	Kathy     	12:32     
+11   	Leo       	12:32     
+12   	Mia       	12:32     
+
+People_count: 13

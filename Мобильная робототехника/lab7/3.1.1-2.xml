@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root version="20190819">
+    <world>
+        <walls/>
+        <skittles/>
+        <balls/>
+        <colorFields/>
+        <images/>
+        <regions/>
+    </world>
+    <robots>
+        <robot id="trikKitRobot" position="0:0" direction="0">
+            <sensors/>
+            <startPosition id="{3f76e731-ec28-4365-ab59-551be20f710c}" y="25" x="25" direction="0"/>
+            <wheels right="M3###output###лю3###" left="M4###output###лю4###"/>
+        </robot>
+    </robots>
+    <settings realisticSensors="false" realisticMotors="false" realisticPhysics="false"/>
+	
+    <constraints>
+		<!-- Лимит времени. Обязательное ограничение -->
+        <timelimit value="10000"/>
+		
+		<!-- Событие, которое выдает ошибку, если пользователь выводит на экран что-то, кроме последовательности -->
+		<event id="array checker false last" settedUpInitially="true">
+            <conditions glue="and">
+				<timer timeout="1100" forceDropOnTimeout="true"/>
+				<notLess>
+						<objectState object="robot1.display.labels.size"/>
+						<string value="17"/>
+				</notLess>
+				<notEquals>
+					<objectState object="robot1.display.labels.last.text"/>
+					<string value="Ввод"/>
+				</notEquals>		
+            </conditions>
+            <trigger>
+                <fail message="На экран, кроме последовательности, может выводиться только слово Ввод"/>
+            </trigger>
+        </event>
+		
+		<!-- Событие, которое выдает ошибку, если получена последовательность неправильной длины -->
+		<event id="array checker false length" settedUpInitially="true">
+            <conditions glue="and">
+				<timer timeout="1000" forceDropOnTimeout="true"/>
+				<conditions glue="or">
+					<greater>
+						<objectState object="robot1.display.labels.size"/>
+						<string value="17"/>
+					</greater>
+					<less>
+						<objectState object="robot1.display.labels.size"/>
+						<string value="16"/>
+					</less>	
+				</conditions>
+            </conditions>
+            <trigger>
+                <fail message="Получена неправильная последовательность"/>
+            </trigger>
+        </event>
+		
+		<!-- массив old = {1, 1, 3, 1, 3, 2, 3, 3, 2, 3, 3, 3, 2, 3, 2, 3, 1, 3, 1, 3, 2}. длина 21 -->
+		<!-- Событие, проверяющее, что первое и последнее слово верны + что количество слов правильное -->
+		<event id="finish checker" settedUpInitially="true">
+            <conditions glue="and">
+				<timer timeout="2000" forceDropOnTimeout="true"/>
+				<equals>
+					<objectState object="robot1.display.labels.first.text"/>
+					<string value="1"/>
+				</equals>
+				<conditions glue="or">
+					<equals>
+						<objectState object="robot1.display.labels.last.text"/>
+						<string value="3"/>
+					</equals>
+					<equals>
+						<objectState object="robot1.display.labels.last.text"/>
+						<string value="Ввод"/>
+					</equals>	
+				</conditions> 
+				<conditions glue="or">
+					<equals>
+						<objectState object="robot1.display.labels.size"/>
+						<string value="17"/>
+					</equals>
+					<equals>
+						<objectState object="robot1.display.labels.size"/>
+						<string value="16"/>
+					</equals>
+				</conditions>
+	
+            </conditions>
+            <trigger>
+                <success/>
+            </trigger>
+        </event>	
+
+    </constraints>
+</root>

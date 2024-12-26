@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root version="20190819">
+    <world>
+        <walls>
+            <wall id="{04fc486f-4c61-48eb-87c1-46e0ccae595e}" fill="#ff000000" stroke="#ff000000" end="-150:300" stroke-style="none" begin="-150:-150" stroke-width="10"/>
+            <wall id="{49b40656-2128-43d8-b564-fc932957ffa4}" fill="#ff000000" stroke="#ff000000" end="150:450" stroke-style="none" begin="0:450" stroke-width="10"/>
+            <wall id="{21d767e3-8ed2-4f52-956f-f0d55c4f5411}" fill="#ff000000" stroke="#ff000000" end="-150:-150" stroke-style="none" begin="450:-150" stroke-width="10"/>
+            <wall id="{9ca4fbe8-2b13-4909-8429-d0797dbd7ae2}" fill="#ff000000" stroke="#ff000000" end="0:300" stroke-style="none" begin="-150:300" stroke-width="10"/>
+            <wall id="{0396abe5-2e75-4e21-a870-344f60ae6bf9}" fill="#ff000000" stroke="#ff000000" end="0:450" stroke-style="none" begin="0:300" stroke-width="10"/>
+            <wall id="{253dbb5f-4655-4d5f-ac12-0bc2815f834e}" fill="#ff000000" stroke="#ff000000" end="0:150" stroke-style="none" begin="150:150" stroke-width="10"/>
+            <wall id="{3c00f288-618f-4de1-a075-a3b592df366f}" fill="#ff000000" stroke="#ff000000" end="150:450" stroke-style="none" begin="150:150" stroke-width="10"/>
+            <wall id="{acdb6560-8006-46e8-937e-6777fdfd4844}" fill="#ff000000" stroke="#ff000000" end="300:150" stroke-style="none" begin="300:-150" stroke-width="10"/>
+            <wall id="{6698382d-e324-43a8-9452-c7ce6d777320}" fill="#ff000000" stroke="#ff000000" end="450:300" stroke-style="none" begin="450:0" stroke-width="10"/>
+            <wall id="{cf3bd70b-1fcf-4b65-a377-2bcd88eb98e9}" fill="#ff000000" stroke="#ff000000" end="150:0" stroke-style="none" begin="-150:0" stroke-width="10"/>
+            <wall id="{a77d7464-1017-4f9a-ae87-69a7c7ef86ea}" fill="#ff000000" stroke="#ff000000" end="450:300" stroke-style="none" begin="150:300" stroke-width="10"/>
+        </walls>
+        <skittles/>
+        <balls/>
+        <colorFields>
+            <rectangle id="{ad6f66cb-04ed-4d74-b2f9-2dd4f2e58fca}" fill="#ff000000" stroke="#ff000000" fill-style="solid" end="600:0" stroke-style="solid" begin="450:-150" stroke-width="6"/>
+        </colorFields>
+        <images/>
+        <regions>
+            <region id="start_zone" visible="true" textY="0" text="Start" type="rectangle" height="50" x="-100" filled="true" y="-100" textX="0" width="50" color="#0000ff"/>
+            <region id="finish" visible="true" textY="0" text="Finish" type="rectangle" height="150" x="450" filled="true" y="-150" textX="0" width="150" color="#ff0000"/>
+		   
+		   <region id="wayzone13" visible="true" type="rectangle" height="150" x="300" filled="true" y="150" width="150" color="#008000"/>
+            <region id="wayzone12" visible="true" type="rectangle" height="150" x="300" filled="true" y="0" width="150" color="#008000"/>
+            <region id="wayzone11" visible="true" type="rectangle" height="150" x="300" filled="true" y="-150" width="150" color="#008000"/>
+            <region id="wayzone10" visible="true" type="rectangle" height="150" x="150" filled="true" y="150" width="150" color="#008000"/>
+            <region id="wayzone9" visible="true" type="rectangle" height="150" x="150" filled="true" y="0" width="150" color="#008000"/>
+            <region id="wayzone8" visible="true" type="rectangle" height="150" x="150" filled="true" y="-150" width="150" color="#008000"/>
+            <region id="wayzone7" visible="true" type="rectangle" height="150" x="0" filled="true" y="300" width="150" color="#008000"/>
+            <region id="wayzone6" visible="true" type="rectangle" height="150" x="0" filled="true" y="150" width="150" color="#008000"/>
+            <region id="wayzone5" visible="true" type="rectangle" height="150" x="0" filled="true" y="0" width="150" color="#008000"/>
+            <region id="wayzone4" visible="true" type="rectangle" height="150" x="0" filled="true" y="-150" width="150" color="#008000"/>
+            <region id="wayzone3" visible="true" type="rectangle" height="150" x="-150" filled="true" y="150" width="150" color="#008000"/>
+            <region id="wayzone2" visible="true" type="rectangle" height="150" x="-150" filled="true" y="0" width="150" color="#008000"/>
+            <region id="wayzone1" visible="true" type="rectangle" height="150" x="-150" filled="true" y="-150" width="150" color="#008000"/>
+        </regions>
+    </world>
+    <robots>
+        <robot id="trikKitRobot" direction="0.529144" position="-103.325:-101.489">
+            <sensors>
+                <sensor port="A1###input###А1###sensorA1" direction="90" position="25:25" type="trik::robotModel::parts::TrikInfraredSensor"/>
+                <sensor port="A2###input###А2###sensorA2" direction="0" position="25:23" type="trik::robotModel::parts::TrikInfraredSensor"/>
+                <sensor port="E3###input###M3$$$Е3###encoder3" direction="0" position="75:25" type="kitBase::robotModel::robotParts::EncoderSensor"/>
+                <sensor port="E4###input###M4$$$Е4###encoder4" direction="0" position="75:25" type="kitBase::robotModel::robotParts::EncoderSensor"/>
+                <sensor port="E1###input###M1$$$Е1###encoder1" direction="0" position="75:25" type="kitBase::robotModel::robotParts::EncoderSensor"/>
+                <sensor port="A5###input###А5###sensorA5" direction="0" position="50:25" type="trik::robotModel::parts::TrikLightSensor"/>
+                <sensor port="E2###input###M2$$$Е2###encoder2" direction="0" position="75:25" type="kitBase::robotModel::robotParts::EncoderSensor"/>
+                <sensor port="M2###output###М2###" direction="0" position="75:25" type="kitBase::robotModel::robotParts::Motor"/>
+                <sensor port="M1###output###М1###" direction="0" position="75:25" type="kitBase::robotModel::robotParts::Motor"/>
+                <sensor port="M4###output###М4###" direction="0" position="75:25" type="kitBase::robotModel::robotParts::Motor"/>
+                <sensor port="M3###output###М3###" direction="0" position="75:25" type="kitBase::robotModel::robotParts::Motor"/>
+            </sensors>
+            <startPosition id="{60537ee8-57b8-4ae6-9e62-4a173306903f}" direction="0.529144" x="-78.3247" y="-76.4891"/>
+            <wheels left="M4###output###М4###" right="M3###output###М3###"/>
+        </robot>
+    </robots>
+    <settings realisticMotors="false" realisticSensors="false" realisticPhysics="false"/>
+    <constraints>
+        <timelimit value="130000"/>
+        <!-- Провека, что нет датчиков, кроме двух датчиков расстояния и одного датчика освещенности-->
+        <constraint checkOnce="true" failMessage="У робота не должно быть датчиков, кроме двух датчиков расстояния и одного датчика освещенности">
+            <conditions glue="and">
+                <equals>
+                    <typeOf objectId="robot1.A3"/>
+                    <string value="undefined"/>
+                </equals>
+                <equals>
+                    <typeOf objectId="robot1.A4"/>
+                    <string value="undefined"/>
+                </equals>
+                <equals>
+                    <typeOf objectId="robot1.A6"/>
+                    <string value="undefined"/>
+                </equals>
+                <equals>
+                    <typeOf objectId="robot1.D1"/>
+                    <string value="undefined"/>
+                </equals>
+                <equals>
+                    <typeOf objectId="robot1.D2"/>
+                    <string value="undefined"/>
+                </equals>
+                <equals>
+                    <typeOf objectId="robot1.F1"/>
+                    <string value="undefined"/>
+                </equals>
+            </conditions>
+        </constraint>
+        <!-- Проверка, что на порт А1 и А2 установлены датчики расстояния, на порт А5 установлен датчик освещенности -->
+        <constraint checkOnce="true" failMessage="У робота должены быть установлены датчики расстояния на портах А1 и А2 и датчик освещенности на порту А5">
+            <conditions glue="and">
+                <equals>
+                    <typeOf objectId="robot1.A1"/>
+                    <string value="twoDModel::robotModel::parts::RangeSensor"/>
+                </equals>
+                <equals>
+                    <typeOf objectId="robot1.A2"/>
+                    <string value="twoDModel::robotModel::parts::RangeSensor"/>
+                </equals>
+                <equals>
+                    <typeOf objectId="robot1.A5"/>
+                    <string value="trik::robotModel::twoD::parts::TwoDLightSensor"/>
+                </equals>
+            </conditions>
+        </constraint>
+        <!-- Зональное ограничение на начало езды. Проверяется один раз в начале программы-->
+        <constraint checkOnce="true" failMessage="Робот должен находиться в синей зоне перед стартом!">
+            <inside regionId="start_zone" objectId="robot1"/>
+        </constraint>
+        <!-- Событие, которое выдает ошибку, если робот не тронулся с места в первую секунду -->
+        <event id="Waiting for going forward too long" settedUpInitially="true">
+            <conditions glue="and">
+                <timer timeout="1000" forceDropOnTimeout="true"/>
+                <settedUp id="We are alive, first move"/>
+            </conditions>
+            <trigger>
+                <fail message="Робот так и не поехал в первую секунду"/>
+            </trigger>
+        </event>
+        <!-- Событие, которое говорит о том, что робот начал двигаться. Мощность на одном из моторов больше 0. Запускается цепочка проверок -->
+        <event id="We are alive, first move" settedUpInitially="true">
+            <conditions glue="or">
+                <notEquals>
+                    <objectState object="robot1.M3.power"/>
+                    <int value="0"/>
+                </notEquals>
+                <notEquals>
+                    <objectState object="robot1.M4.power"/>
+                    <int value="0"/>
+                </notEquals>
+            </conditions>
+            <triggers>
+                <setUp id="check1"/>
+            </triggers>
+        </event>
+        <!-- Цепочка проверок, что робот едет по правильной траектории -->
+        <event id="check1">
+            <condition>
+                <inside regionId="wayzone4" objectId="robot1"/>
+            </condition>
+            <trigger>
+                <setUp id="check2"/>
+            </trigger>
+        </event>
+        <event id="check2">
+            <condition>
+                <inside regionId="wayzone5" objectId="robot1"/>
+            </condition>
+            <trigger>
+                <setUp id="check3"/>
+            </trigger>
+        </event>
+        <event id="check3">
+            <condition>
+                <inside regionId="wayzone7" objectId="robot1"/>
+            </condition>
+            <trigger>
+                <setUp id="check4"/>
+            </trigger>
+        </event>
+        <event id="check4">
+            <condition>
+                <inside regionId="wayzone5" objectId="robot1"/>
+            </condition>
+            <trigger>
+                <setUp id="check5"/>
+            </trigger>
+        </event>
+        <event id="check5">
+            <condition>
+                <inside regionId="wayzone10" objectId="robot1"/>
+            </condition>
+            <trigger>
+                <setUp id="black check"/>
+            </trigger>
+        </event>
+        
+        <!-- Событие, проверяющее, что робот увидел черную метку -->
+        <event id="black check">
+            <condition>
+                <greater>
+                    <objectState object="robot1.A5.value"/>
+                    <int value="67"/>
+                </greater>
+            </condition>
+            <triggers>
+                <setUp id="finish checker"/>
+				<setUp id="wrong way checker"/>
+            </triggers>
+        </event>
+		
+		<!-- Событие, которое выдает ошибку, если при пути обратно поехали неправильно -->
+        <event id="wrong way checker">
+            <conditions glue="and">
+				<inside regionId="wayzone5" objectId="robot1"/> 
+			</conditions>
+            <trigger>
+                <fail message="Робот движется по неправильному направлению"/>
+            </trigger>
+        </event>
+		
+        <!-- Событие, оповещающее об успешном выполнении программы -->
+        <event id="finish checker">
+            <conditions glue="and">
+				<inside regionId="start_zone" objectId="robot1"/> 
+                <equals>
+                    <objectState object="robot1.M3.power"/>
+                    <int value="0"/>
+                </equals>
+                <equals>
+                    <objectState object="robot1.M4.power"/>
+                    <int value="0"/>
+                </equals>
+			</conditions>
+            <trigger>
+                <success/>
+            </trigger>
+        </event>
+    </constraints>
+</root>

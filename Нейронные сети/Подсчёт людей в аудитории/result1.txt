@@ -1,0 +1,8 @@
+id      name        time_check
+0    	Alice     	12:32     
+1    	Bob       	12:32     
+2    	Charlie   	12:32     
+3    	David     	12:32     
+4    	Eve       	12:32     
+
+People_count: 5
