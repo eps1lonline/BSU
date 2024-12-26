@@ -1,0 +1,2382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_226c941461881d934a9a469b997b8fb0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_226c941461881d934a9a469b997b8fb0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_226c941461881d934a9a469b997b8fb0 = L.map(
+                "map_226c941461881d934a9a469b997b8fb0",
+                {
+                    center: [36.70072321818182, -74.27620595454546],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2e29ba7445fae02a3b7b35f87a45cf16 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2e29ba7445fae02a3b7b35f87a45cf16.addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+            var circle_marker_998030acb22b8eff2547c3d49bdae29c = L.circleMarker(
+                [18.456792, -69.951164],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_ca2108b1bec48b735d48934f016eeb97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8024318f60d1f274f9b96e4cc70b311 = $(`<div id="html_c8024318f60d1f274f9b96e4cc70b311" style="width: 100.0%; height: 100.0%;">Событие ID: 197000000001<br>Страна: Dominican Republic<br>Город: Santo Domingo</div>`)[0];
+                popup_ca2108b1bec48b735d48934f016eeb97.setContent(html_c8024318f60d1f274f9b96e4cc70b311);
+            
+        
+
+        circle_marker_998030acb22b8eff2547c3d49bdae29c.bindPopup(popup_ca2108b1bec48b735d48934f016eeb97)
+        ;
+
+        
+    
+    
+            var circle_marker_2bff58a525519b19c7914a7fd374db72 = L.circleMarker(
+                [19.371887, -99.086624],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_c44068fecfed31e9eed60844793d0304 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b72da5073afd77d6051a8cd3ae0e0778 = $(`<div id="html_b72da5073afd77d6051a8cd3ae0e0778" style="width: 100.0%; height: 100.0%;">Событие ID: 197000000002<br>Страна: Mexico<br>Город: Mexico city</div>`)[0];
+                popup_c44068fecfed31e9eed60844793d0304.setContent(html_b72da5073afd77d6051a8cd3ae0e0778);
+            
+        
+
+        circle_marker_2bff58a525519b19c7914a7fd374db72.bindPopup(popup_c44068fecfed31e9eed60844793d0304)
+        ;
+
+        
+    
+    
+            var circle_marker_6c9ce668b472f0201dbb477d914da844 = L.circleMarker(
+                [15.478598, 120.599741],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_99c2df901198ff94f9512961e723fcc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8278d044b3f3bbbe6d2eb915d5ce356 = $(`<div id="html_c8278d044b3f3bbbe6d2eb915d5ce356" style="width: 100.0%; height: 100.0%;">Событие ID: 197001000001<br>Страна: Philippines<br>Город: Unknown</div>`)[0];
+                popup_99c2df901198ff94f9512961e723fcc7.setContent(html_c8278d044b3f3bbbe6d2eb915d5ce356);
+            
+        
+
+        circle_marker_6c9ce668b472f0201dbb477d914da844.bindPopup(popup_99c2df901198ff94f9512961e723fcc7)
+        ;
+
+        
+    
+    
+            var circle_marker_558e4dfd2343806c690f711ee2f8f07b = L.circleMarker(
+                [37.99749, 23.762728],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_9a4b41370ed638072536d9c78735b5ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_304907d7bfd08308283183cbb8ca0bb4 = $(`<div id="html_304907d7bfd08308283183cbb8ca0bb4" style="width: 100.0%; height: 100.0%;">Событие ID: 197001000002<br>Страна: Greece<br>Город: Athens</div>`)[0];
+                popup_9a4b41370ed638072536d9c78735b5ce.setContent(html_304907d7bfd08308283183cbb8ca0bb4);
+            
+        
+
+        circle_marker_558e4dfd2343806c690f711ee2f8f07b.bindPopup(popup_9a4b41370ed638072536d9c78735b5ce)
+        ;
+
+        
+    
+    
+            var circle_marker_1ec7ebff7751b578e55922333ba0cb67 = L.circleMarker(
+                [33.580412, 130.396361],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_30f4f95762919cf69371d19895553343 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d76845a3894117e6905e5b2e56e9ee78 = $(`<div id="html_d76845a3894117e6905e5b2e56e9ee78" style="width: 100.0%; height: 100.0%;">Событие ID: 197001000003<br>Страна: Japan<br>Город: Fukouka</div>`)[0];
+                popup_30f4f95762919cf69371d19895553343.setContent(html_d76845a3894117e6905e5b2e56e9ee78);
+            
+        
+
+        circle_marker_1ec7ebff7751b578e55922333ba0cb67.bindPopup(popup_30f4f95762919cf69371d19895553343)
+        ;
+
+        
+    
+    
+            var circle_marker_7a17ca844ec59dbb1c202fdf0bb4b234 = L.circleMarker(
+                [37.005105, -89.176269],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_e9b2410bfe97858495864411bc036701 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_988850857075ff0683c480dbd21d4fc1 = $(`<div id="html_988850857075ff0683c480dbd21d4fc1" style="width: 100.0%; height: 100.0%;">Событие ID: 197001010002<br>Страна: United States<br>Город: Cairo</div>`)[0];
+                popup_e9b2410bfe97858495864411bc036701.setContent(html_988850857075ff0683c480dbd21d4fc1);
+            
+        
+
+        circle_marker_7a17ca844ec59dbb1c202fdf0bb4b234.bindPopup(popup_e9b2410bfe97858495864411bc036701)
+        ;
+
+        
+    
+    
+            var circle_marker_19169b90ba284ce3bdf0b260b8bc1ca3 = L.circleMarker(
+                [-34.891151, -56.187214],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_fa34b5808be110ab9b28d4f6a53061a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c37b0d25ffc0aaa402f60a1a78d01835 = $(`<div id="html_c37b0d25ffc0aaa402f60a1a78d01835" style="width: 100.0%; height: 100.0%;">Событие ID: 197001020001<br>Страна: Uruguay<br>Город: Montevideo</div>`)[0];
+                popup_fa34b5808be110ab9b28d4f6a53061a9.setContent(html_c37b0d25ffc0aaa402f60a1a78d01835);
+            
+        
+
+        circle_marker_19169b90ba284ce3bdf0b260b8bc1ca3.bindPopup(popup_fa34b5808be110ab9b28d4f6a53061a9)
+        ;
+
+        
+    
+    
+            var circle_marker_6aaf765ba001dd2af91421a7887003f7 = L.circleMarker(
+                [37.791927, -122.225906],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_a4ebcb1250c1e7eb737be51737ba7e09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e80baab6f6b8759ba869d862986c8894 = $(`<div id="html_e80baab6f6b8759ba869d862986c8894" style="width: 100.0%; height: 100.0%;">Событие ID: 197001020002<br>Страна: United States<br>Город: Oakland</div>`)[0];
+                popup_a4ebcb1250c1e7eb737be51737ba7e09.setContent(html_e80baab6f6b8759ba869d862986c8894);
+            
+        
+
+        circle_marker_6aaf765ba001dd2af91421a7887003f7.bindPopup(popup_a4ebcb1250c1e7eb737be51737ba7e09)
+        ;
+
+        
+    
+    
+            var circle_marker_f285f157e1e444e9ef08a8d9f99c96eb = L.circleMarker(
+                [43.076592, -89.412488],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_ba3e56018066e5208e3063dcb0720ec8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cd1391759338ead30a938cc67b79d1d = $(`<div id="html_5cd1391759338ead30a938cc67b79d1d" style="width: 100.0%; height: 100.0%;">Событие ID: 197001020003<br>Страна: United States<br>Город: Madison</div>`)[0];
+                popup_ba3e56018066e5208e3063dcb0720ec8.setContent(html_5cd1391759338ead30a938cc67b79d1d);
+            
+        
+
+        circle_marker_f285f157e1e444e9ef08a8d9f99c96eb.bindPopup(popup_ba3e56018066e5208e3063dcb0720ec8)
+        ;
+
+        
+    
+    
+            var circle_marker_3faf8004930539e2e38b9342aa44d1c8 = L.circleMarker(
+                [43.07295, -89.386694],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_b43ac4b217082fb5d55f2cc0533a427e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6f1a6ffdc810e219d1f611767d57df8 = $(`<div id="html_e6f1a6ffdc810e219d1f611767d57df8" style="width: 100.0%; height: 100.0%;">Событие ID: 197001030001<br>Страна: United States<br>Город: Madison</div>`)[0];
+                popup_b43ac4b217082fb5d55f2cc0533a427e.setContent(html_e6f1a6ffdc810e219d1f611767d57df8);
+            
+        
+
+        circle_marker_3faf8004930539e2e38b9342aa44d1c8.bindPopup(popup_b43ac4b217082fb5d55f2cc0533a427e)
+        ;
+
+        
+    
+    
+            var circle_marker_5c8c431d66bc12476d3dca33012aa08f = L.circleMarker(
+                [43.4685, -89.744299],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_c61caea94fcb3c25a308a3d2a0b4ab08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecf56f19c795c7406e95b45fc50f02f3 = $(`<div id="html_ecf56f19c795c7406e95b45fc50f02f3" style="width: 100.0%; height: 100.0%;">Событие ID: 197001050001<br>Страна: United States<br>Город: Baraboo</div>`)[0];
+                popup_c61caea94fcb3c25a308a3d2a0b4ab08.setContent(html_ecf56f19c795c7406e95b45fc50f02f3);
+            
+        
+
+        circle_marker_5c8c431d66bc12476d3dca33012aa08f.bindPopup(popup_c61caea94fcb3c25a308a3d2a0b4ab08)
+        ;
+
+        
+    
+    
+            var circle_marker_2c3d7279d8d6f1ef78649ac4073d389b = L.circleMarker(
+                [39.758968, -104.876305],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_3d08805789c0a231538cd972eb2aebf2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40cbe52971c4a6e96e1d0821b5b96337 = $(`<div id="html_40cbe52971c4a6e96e1d0821b5b96337" style="width: 100.0%; height: 100.0%;">Событие ID: 197001060001<br>Страна: United States<br>Город: Denver</div>`)[0];
+                popup_3d08805789c0a231538cd972eb2aebf2.setContent(html_40cbe52971c4a6e96e1d0821b5b96337);
+            
+        
+
+        circle_marker_2c3d7279d8d6f1ef78649ac4073d389b.bindPopup(popup_3d08805789c0a231538cd972eb2aebf2)
+        ;
+
+        
+    
+    
+            var circle_marker_d42f180fd0f4a935256934a631aaeb58 = L.circleMarker(
+                [41.890961, 12.490069],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_8382db9561fd079a6e226d236c713392 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bcb4ff40778e93045a5654cfe1f31a3 = $(`<div id="html_6bcb4ff40778e93045a5654cfe1f31a3" style="width: 100.0%; height: 100.0%;">Событие ID: 197001080001<br>Страна: Italy<br>Город: Rome</div>`)[0];
+                popup_8382db9561fd079a6e226d236c713392.setContent(html_6bcb4ff40778e93045a5654cfe1f31a3);
+            
+        
+
+        circle_marker_d42f180fd0f4a935256934a631aaeb58.bindPopup(popup_8382db9561fd079a6e226d236c713392)
+        ;
+
+        
+    
+    
+            var circle_marker_3e15e7ba5ab7f58b2ce26f65213b4ff4 = L.circleMarker(
+                [42.331685, -83.047924],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_cf7180f23700ca1895537ba6d18be4dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f220bae866d095051b25b5c6f4c5571 = $(`<div id="html_1f220bae866d095051b25b5c6f4c5571" style="width: 100.0%; height: 100.0%;">Событие ID: 197001090001<br>Страна: United States<br>Город: Detroit</div>`)[0];
+                popup_cf7180f23700ca1895537ba6d18be4dd.setContent(html_1f220bae866d095051b25b5c6f4c5571);
+            
+        
+
+        circle_marker_3e15e7ba5ab7f58b2ce26f65213b4ff4.bindPopup(popup_cf7180f23700ca1895537ba6d18be4dd)
+        ;
+
+        
+    
+    
+            var circle_marker_82b1e974aa90e6c28ff67d28eb63d9ec = L.circleMarker(
+                [18.386932, -66.061127],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_cfd3a40c948d7746e762337a44cef5b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0301c1e9295214fde169be25eff7970 = $(`<div id="html_a0301c1e9295214fde169be25eff7970" style="width: 100.0%; height: 100.0%;">Событие ID: 197001090002<br>Страна: United States<br>Город: Rio Piedras</div>`)[0];
+                popup_cfd3a40c948d7746e762337a44cef5b7.setContent(html_a0301c1e9295214fde169be25eff7970);
+            
+        
+
+        circle_marker_82b1e974aa90e6c28ff67d28eb63d9ec.bindPopup(popup_cfd3a40c948d7746e762337a44cef5b7)
+        ;
+
+        
+    
+    
+            var circle_marker_c3a981a3187be658def424422e7f7fe4 = L.circleMarker(
+                [52.50153, 13.401851],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_40295cb1138c4e57df7ffd2d9efcea0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa6a1fa8581ffc29da7bfa503c393c4d = $(`<div id="html_fa6a1fa8581ffc29da7bfa503c393c4d" style="width: 100.0%; height: 100.0%;">Событие ID: 197001100001<br>Страна: East Germany (GDR)<br>Город: Berlin</div>`)[0];
+                popup_40295cb1138c4e57df7ffd2d9efcea0a.setContent(html_fa6a1fa8581ffc29da7bfa503c393c4d);
+            
+        
+
+        circle_marker_c3a981a3187be658def424422e7f7fe4.bindPopup(popup_40295cb1138c4e57df7ffd2d9efcea0a)
+        ;
+
+        
+    
+    
+            var circle_marker_b7839736b46f17d8bd4433a291d4a478 = L.circleMarker(
+                [40.697132, -73.931351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_93ce4c5fa20054643919845131799dc8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e7942dcc8df626f0a2eab7fa4e5dd07 = $(`<div id="html_0e7942dcc8df626f0a2eab7fa4e5dd07" style="width: 100.0%; height: 100.0%;">Событие ID: 197001120001<br>Страна: United States<br>Город: New York City</div>`)[0];
+                popup_93ce4c5fa20054643919845131799dc8.setContent(html_0e7942dcc8df626f0a2eab7fa4e5dd07);
+            
+        
+
+        circle_marker_b7839736b46f17d8bd4433a291d4a478.bindPopup(popup_93ce4c5fa20054643919845131799dc8)
+        ;
+
+        
+    
+    
+            var circle_marker_68066bcf8a5349457b315224e561e4ef = L.circleMarker(
+                [18.379998, -65.830948],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_2d127f50bc57fb71c9c02aff3625025f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b318ee1e906e17cc2350a3f81bd88967 = $(`<div id="html_b318ee1e906e17cc2350a3f81bd88967" style="width: 100.0%; height: 100.0%;">Событие ID: 197001120002<br>Страна: United States<br>Город: Rio Grande</div>`)[0];
+                popup_2d127f50bc57fb71c9c02aff3625025f.setContent(html_b318ee1e906e17cc2350a3f81bd88967);
+            
+        
+
+        circle_marker_68066bcf8a5349457b315224e561e4ef.bindPopup(popup_2d127f50bc57fb71c9c02aff3625025f)
+        ;
+
+        
+    
+    
+            var circle_marker_0383590fb2afc26dabf2f5e7f6641b08 = L.circleMarker(
+                [47.610786, -122.331306],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_fe35c6368f801a71d07587bc8fd002f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da769269088a45c8d7673eab95a08c63 = $(`<div id="html_da769269088a45c8d7673eab95a08c63" style="width: 100.0%; height: 100.0%;">Событие ID: 197001130001<br>Страна: United States<br>Город: Seattle</div>`)[0];
+                popup_fe35c6368f801a71d07587bc8fd002f1.setContent(html_da769269088a45c8d7673eab95a08c63);
+            
+        
+
+        circle_marker_0383590fb2afc26dabf2f5e7f6641b08.bindPopup(popup_fe35c6368f801a71d07587bc8fd002f1)
+        ;
+
+        
+    
+    
+            var circle_marker_44ee5995ba1a251df8417d8d5f508e94 = L.circleMarker(
+                [40.116748, -88.23927],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_fc3478ea2bd37b40920b96c557a508e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7626e3c83f8e1e780ff65e171934cf1 = $(`<div id="html_b7626e3c83f8e1e780ff65e171934cf1" style="width: 100.0%; height: 100.0%;">Событие ID: 197001140001<br>Страна: United States<br>Город: Champaign</div>`)[0];
+                popup_fc3478ea2bd37b40920b96c557a508e9.setContent(html_b7626e3c83f8e1e780ff65e171934cf1);
+            
+        
+
+        circle_marker_44ee5995ba1a251df8417d8d5f508e94.bindPopup(popup_fc3478ea2bd37b40920b96c557a508e9)
+        ;
+
+        
+    
+    
+            var circle_marker_db52062f7f0f8b6759a6fd7ea9f3eadc = L.circleMarker(
+                [-34.891151, -56.187214],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_2f33932e04bc48467fc195cc9d951fc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16e9d5d0ccfbca4e0ed00f84aa4f4734 = $(`<div id="html_16e9d5d0ccfbca4e0ed00f84aa4f4734" style="width: 100.0%; height: 100.0%;">Событие ID: 197001150001<br>Страна: Uruguay<br>Город: Montevideo</div>`)[0];
+                popup_2f33932e04bc48467fc195cc9d951fc7.setContent(html_16e9d5d0ccfbca4e0ed00f84aa4f4734);
+            
+        
+
+        circle_marker_db52062f7f0f8b6759a6fd7ea9f3eadc.bindPopup(popup_2f33932e04bc48467fc195cc9d951fc7)
+        ;
+
+        
+    
+    
+            var circle_marker_1ca2d980ecd3306cd7c07b862ec1394e = L.circleMarker(
+                [47.610786, -122.331306],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_8778ffb8374fc5e3cd4783c73191066e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd8f364d767e48a7ea29d9fb3cad74b2 = $(`<div id="html_dd8f364d767e48a7ea29d9fb3cad74b2" style="width: 100.0%; height: 100.0%;">Событие ID: 197001190002<br>Страна: United States<br>Город: Seattle</div>`)[0];
+                popup_8778ffb8374fc5e3cd4783c73191066e.setContent(html_dd8f364d767e48a7ea29d9fb3cad74b2);
+            
+        
+
+        circle_marker_1ca2d980ecd3306cd7c07b862ec1394e.bindPopup(popup_8778ffb8374fc5e3cd4783c73191066e)
+        ;
+
+        
+    
+    
+            var circle_marker_9fcddffe498986f5be4dbf7188f04f4b = L.circleMarker(
+                [47.610786, -122.331306],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_34d32f18bed75ab38c631af0d7e9f222 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5614ed9ed3076acc588005d73a8a491 = $(`<div id="html_d5614ed9ed3076acc588005d73a8a491" style="width: 100.0%; height: 100.0%;">Событие ID: 197001190003<br>Страна: United States<br>Город: Seattle</div>`)[0];
+                popup_34d32f18bed75ab38c631af0d7e9f222.setContent(html_d5614ed9ed3076acc588005d73a8a491);
+            
+        
+
+        circle_marker_9fcddffe498986f5be4dbf7188f04f4b.bindPopup(popup_34d32f18bed75ab38c631af0d7e9f222)
+        ;
+
+        
+    
+    
+            var circle_marker_2a5addc85cae7f11fe73eedd6d235a45 = L.circleMarker(
+                [40.717892, -74.067467],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_7477f1c016475ad8c112d28616415db5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_460d90209b7f9a3c4bd8fd548718395b = $(`<div id="html_460d90209b7f9a3c4bd8fd548718395b" style="width: 100.0%; height: 100.0%;">Событие ID: 197001190004<br>Страна: United States<br>Город: Jersey City</div>`)[0];
+                popup_7477f1c016475ad8c112d28616415db5.setContent(html_460d90209b7f9a3c4bd8fd548718395b);
+            
+        
+
+        circle_marker_2a5addc85cae7f11fe73eedd6d235a45.bindPopup(popup_7477f1c016475ad8c112d28616415db5)
+        ;
+
+        
+    
+    
+            var circle_marker_b0df277f47a8713c5f3ae6dbdb0cb16f = L.circleMarker(
+                [14.622869, -90.529068],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_e9e7c8b68a57f270d3220b55f428048e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0cbfc8f7d4b965575f2c896645affdf9 = $(`<div id="html_0cbfc8f7d4b965575f2c896645affdf9" style="width: 100.0%; height: 100.0%;">Событие ID: 197001200001<br>Страна: Guatemala<br>Город: Guatemala City</div>`)[0];
+                popup_e9e7c8b68a57f270d3220b55f428048e.setContent(html_0cbfc8f7d4b965575f2c896645affdf9);
+            
+        
+
+        circle_marker_b0df277f47a8713c5f3ae6dbdb0cb16f.bindPopup(popup_e9e7c8b68a57f270d3220b55f428048e)
+        ;
+
+        
+    
+    
+            var circle_marker_22357cd084c16616fe5fc395411d1f53 = L.circleMarker(
+                [14.67428, 121.057495],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_b6870e30da615081ba43e54c29765bb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7b294c853405080159b4fb6b8f2cb55 = $(`<div id="html_d7b294c853405080159b4fb6b8f2cb55" style="width: 100.0%; height: 100.0%;">Событие ID: 197001210001<br>Страна: Philippines<br>Город: Quezon City</div>`)[0];
+                popup_b6870e30da615081ba43e54c29765bb6.setContent(html_d7b294c853405080159b4fb6b8f2cb55);
+            
+        
+
+        circle_marker_22357cd084c16616fe5fc395411d1f53.bindPopup(popup_b6870e30da615081ba43e54c29765bb6)
+        ;
+
+        
+    
+    
+            var circle_marker_f7c3f2506bea55f58212e716e5d822b4 = L.circleMarker(
+                [10.482834, -66.962128],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_324e30184e6bd8fd280edefddd46ece6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00131bb764e8c2f10266c7dc14b30861 = $(`<div id="html_00131bb764e8c2f10266c7dc14b30861" style="width: 100.0%; height: 100.0%;">Событие ID: 197001220001<br>Страна: Venezuela<br>Город: Caracas</div>`)[0];
+                popup_324e30184e6bd8fd280edefddd46ece6.setContent(html_00131bb764e8c2f10266c7dc14b30861);
+            
+        
+
+        circle_marker_f7c3f2506bea55f58212e716e5d822b4.bindPopup(popup_324e30184e6bd8fd280edefddd46ece6)
+        ;
+
+        
+    
+    
+            var circle_marker_a8684200f41c6da5d9923f5a1dc2877e = L.circleMarker(
+                [42.47031, -96.413949],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_3f383953a9899fbb1d80a4fa58531f18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b0ad8315668008eca221ebc6b342867 = $(`<div id="html_3b0ad8315668008eca221ebc6b342867" style="width: 100.0%; height: 100.0%;">Событие ID: 197001220002<br>Страна: United States<br>Город: South Sioux City</div>`)[0];
+                popup_3f383953a9899fbb1d80a4fa58531f18.setContent(html_3b0ad8315668008eca221ebc6b342867);
+            
+        
+
+        circle_marker_a8684200f41c6da5d9923f5a1dc2877e.bindPopup(popup_3f383953a9899fbb1d80a4fa58531f18)
+        ;
+
+        
+    
+    
+            var circle_marker_7fb31b1f2a02b3cb27ad1c4102e1cd04 = L.circleMarker(
+                [33.60651, -88.650419],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_f88440376dc1f08df18b01b40a15be73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_107c32ed2692130431da7f0136a6f150 = $(`<div id="html_107c32ed2692130431da7f0136a6f150" style="width: 100.0%; height: 100.0%;">Событие ID: 197001250001<br>Страна: United States<br>Город: West Point</div>`)[0];
+                popup_f88440376dc1f08df18b01b40a15be73.setContent(html_107c32ed2692130431da7f0136a6f150);
+            
+        
+
+        circle_marker_7fb31b1f2a02b3cb27ad1c4102e1cd04.bindPopup(popup_f88440376dc1f08df18b01b40a15be73)
+        ;
+
+        
+    
+    
+            var circle_marker_72a63d01bac82fce82e94aa64628530a = L.circleMarker(
+                [40.697132, -73.931351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_96de07214a21871b3fcf051b41fd87f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94414445aba6e4779a49034830e22d6d = $(`<div id="html_94414445aba6e4779a49034830e22d6d" style="width: 100.0%; height: 100.0%;">Событие ID: 197001250002<br>Страна: United States<br>Город: New York City</div>`)[0];
+                popup_96de07214a21871b3fcf051b41fd87f9.setContent(html_94414445aba6e4779a49034830e22d6d);
+            
+        
+
+        circle_marker_72a63d01bac82fce82e94aa64628530a.bindPopup(popup_96de07214a21871b3fcf051b41fd87f9)
+        ;
+
+        
+    
+    
+            var circle_marker_925142c67e58cb555437fd0e761faf99 = L.circleMarker(
+                [33.60651, -88.650419],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_a2ba446e908a338ddb4345d0f666840c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_350eb1640854a2b94fa02d95dd42779a = $(`<div id="html_350eb1640854a2b94fa02d95dd42779a" style="width: 100.0%; height: 100.0%;">Событие ID: 197001260001<br>Страна: United States<br>Город: West Point</div>`)[0];
+                popup_a2ba446e908a338ddb4345d0f666840c.setContent(html_350eb1640854a2b94fa02d95dd42779a);
+            
+        
+
+        circle_marker_925142c67e58cb555437fd0e761faf99.bindPopup(popup_a2ba446e908a338ddb4345d0f666840c)
+        ;
+
+        
+    
+    
+            var circle_marker_64d689b049291219ba6628b8171abf61 = L.circleMarker(
+                [40.697132, -73.931351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_3d96b3695fe8830af822feb14c3c46e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_308d3e2cc1aed57a7699acf07edeea44 = $(`<div id="html_308d3e2cc1aed57a7699acf07edeea44" style="width: 100.0%; height: 100.0%;">Событие ID: 197001260003<br>Страна: United States<br>Город: New York City</div>`)[0];
+                popup_3d96b3695fe8830af822feb14c3c46e3.setContent(html_308d3e2cc1aed57a7699acf07edeea44);
+            
+        
+
+        circle_marker_64d689b049291219ba6628b8171abf61.bindPopup(popup_3d96b3695fe8830af822feb14c3c46e3)
+        ;
+
+        
+    
+    
+            var circle_marker_39577253024f1cba548b6ed96404e7b0 = L.circleMarker(
+                [41.241996, -82.615241],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_5921cf57ad91cf14d8cbd90e705a8d97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_903e7d968cd3c676671c732b953b073c = $(`<div id="html_903e7d968cd3c676671c732b953b073c" style="width: 100.0%; height: 100.0%;">Событие ID: 197001270002<br>Страна: United States<br>Город: Norwalk</div>`)[0];
+                popup_5921cf57ad91cf14d8cbd90e705a8d97.setContent(html_903e7d968cd3c676671c732b953b073c);
+            
+        
+
+        circle_marker_39577253024f1cba548b6ed96404e7b0.bindPopup(popup_5921cf57ad91cf14d8cbd90e705a8d97)
+        ;
+
+        
+    
+    
+            var circle_marker_8f5fcd18849858d87020b3a88bdd5cb1 = L.circleMarker(
+                [52.50153, 13.401851],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_2b191e59280025bc2f83adaf9e52ae2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_453df7c86f923961c122e8f9ce233c98 = $(`<div id="html_453df7c86f923961c122e8f9ce233c98" style="width: 100.0%; height: 100.0%;">Событие ID: 197001280001<br>Страна: East Germany (GDR)<br>Город: Berlin</div>`)[0];
+                popup_2b191e59280025bc2f83adaf9e52ae2a.setContent(html_453df7c86f923961c122e8f9ce233c98);
+            
+        
+
+        circle_marker_8f5fcd18849858d87020b3a88bdd5cb1.bindPopup(popup_2b191e59280025bc2f83adaf9e52ae2a)
+        ;
+
+        
+    
+    
+            var circle_marker_f3d005fa5352eb0fd912fbc7bdb5e768 = L.circleMarker(
+                [47.610786, -122.331306],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_95a06e32f800c66f167310bb10b45c6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81b5a8e6425dc7065ece8c98b988450a = $(`<div id="html_81b5a8e6425dc7065ece8c98b988450a" style="width: 100.0%; height: 100.0%;">Событие ID: 197001280002<br>Страна: United States<br>Город: Seattle</div>`)[0];
+                popup_95a06e32f800c66f167310bb10b45c6a.setContent(html_81b5a8e6425dc7065ece8c98b988450a);
+            
+        
+
+        circle_marker_f3d005fa5352eb0fd912fbc7bdb5e768.bindPopup(popup_95a06e32f800c66f167310bb10b45c6a)
+        ;
+
+        
+    
+    
+            var circle_marker_60d8b43dff7ea6b9b6c7980471057f23 = L.circleMarker(
+                [42.479999, -96.413046],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_fbc938577432244060f303e7600016ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_963686545a4b5014cf011ecbe897c687 = $(`<div id="html_963686545a4b5014cf011ecbe897c687" style="width: 100.0%; height: 100.0%;">Событие ID: 197001300001<br>Страна: United States<br>Город: South Sioux City</div>`)[0];
+                popup_fbc938577432244060f303e7600016ce.setContent(html_963686545a4b5014cf011ecbe897c687);
+            
+        
+
+        circle_marker_60d8b43dff7ea6b9b6c7980471057f23.bindPopup(popup_fbc938577432244060f303e7600016ce)
+        ;
+
+        
+    
+    
+            var circle_marker_f64e3be630290196d660acfaff8bbfbe = L.circleMarker(
+                [42.46634, -96.41405],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_b611d6a29cd4748723034e4daa5f9518 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec80f918a1c832c23cc4e13a005f2342 = $(`<div id="html_ec80f918a1c832c23cc4e13a005f2342" style="width: 100.0%; height: 100.0%;">Событие ID: 197001300002<br>Страна: United States<br>Город: South Sioux City</div>`)[0];
+                popup_b611d6a29cd4748723034e4daa5f9518.setContent(html_ec80f918a1c832c23cc4e13a005f2342);
+            
+        
+
+        circle_marker_f64e3be630290196d660acfaff8bbfbe.bindPopup(popup_b611d6a29cd4748723034e4daa5f9518)
+        ;
+
+        
+    
+    
+            var circle_marker_0c87bc2e9cebb2324686f9da1acd8379 = L.circleMarker(
+                [25.720851, -80.277857],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_06ce5fdc623e750c669b24e076c35c93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82194628ef724a1e900ae0b732bcd6ff = $(`<div id="html_82194628ef724a1e900ae0b732bcd6ff" style="width: 100.0%; height: 100.0%;">Событие ID: 197001300003<br>Страна: United States<br>Город: Coral Gables</div>`)[0];
+                popup_06ce5fdc623e750c669b24e076c35c93.setContent(html_82194628ef724a1e900ae0b732bcd6ff);
+            
+        
+
+        circle_marker_0c87bc2e9cebb2324686f9da1acd8379.bindPopup(popup_06ce5fdc623e750c669b24e076c35c93)
+        ;
+
+        
+    
+    
+            var circle_marker_a7184f87ff8952f122623ea616d7f2fe = L.circleMarker(
+                [15.675051, 120.331618],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_6c116800960e7da97919f7d93b863c0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da528fe5580a059cbeaf0b680272f51e = $(`<div id="html_da528fe5580a059cbeaf0b680272f51e" style="width: 100.0%; height: 100.0%;">Событие ID: 197001310001<br>Страна: Philippines<br>Город: Bamban</div>`)[0];
+                popup_6c116800960e7da97919f7d93b863c0b.setContent(html_da528fe5580a059cbeaf0b680272f51e);
+            
+        
+
+        circle_marker_a7184f87ff8952f122623ea616d7f2fe.bindPopup(popup_6c116800960e7da97919f7d93b863c0b)
+        ;
+
+        
+    
+    
+            var circle_marker_a624e08cfeb487fb33425d51520c8251 = L.circleMarker(
+                [39.758968, -104.876305],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_48e13785953354c71dcdc855e189c5e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fe6b79fbaf248a17285af94965fa25c = $(`<div id="html_8fe6b79fbaf248a17285af94965fa25c" style="width: 100.0%; height: 100.0%;">Событие ID: 197001310002<br>Страна: United States<br>Город: Denver</div>`)[0];
+                popup_48e13785953354c71dcdc855e189c5e9.setContent(html_8fe6b79fbaf248a17285af94965fa25c);
+            
+        
+
+        circle_marker_a624e08cfeb487fb33425d51520c8251.bindPopup(popup_48e13785953354c71dcdc855e189c5e9)
+        ;
+
+        
+    
+    
+            var circle_marker_39ce29a90b8cbd8ecc5a9c9d381254a2 = L.circleMarker(
+                [45.511795, -122.675629],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_714e60b33db520e5ec62ea0d146a7fbd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_baa72704ee54605106ca57b4c1dd6dea = $(`<div id="html_baa72704ee54605106ca57b4c1dd6dea" style="width: 100.0%; height: 100.0%;">Событие ID: 197002010001<br>Страна: United States<br>Город: Portland</div>`)[0];
+                popup_714e60b33db520e5ec62ea0d146a7fbd.setContent(html_baa72704ee54605106ca57b4c1dd6dea);
+            
+        
+
+        circle_marker_39ce29a90b8cbd8ecc5a9c9d381254a2.bindPopup(popup_714e60b33db520e5ec62ea0d146a7fbd)
+        ;
+
+        
+    
+    
+            var circle_marker_4501b74ee1cfe29c2f09c84f5a6d0934 = L.circleMarker(
+                [37.005105, -89.176269],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_74f2858517d9d63eea8c0840613138ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9d13f6b13447ac1f746db19a2556ec9 = $(`<div id="html_e9d13f6b13447ac1f746db19a2556ec9" style="width: 100.0%; height: 100.0%;">Событие ID: 197002010002<br>Страна: United States<br>Город: Cairo</div>`)[0];
+                popup_74f2858517d9d63eea8c0840613138ec.setContent(html_e9d13f6b13447ac1f746db19a2556ec9);
+            
+        
+
+        circle_marker_4501b74ee1cfe29c2f09c84f5a6d0934.bindPopup(popup_74f2858517d9d63eea8c0840613138ec)
+        ;
+
+        
+    
+    
+            var circle_marker_e7d566e8312486c0852f07b5191c6bdd = L.circleMarker(
+                [40.697132, -73.931351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_ce403b953b46a99ebafda0179d3eaacc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0275cda6d9e1d25e48f5286d8ef7d6a5 = $(`<div id="html_0275cda6d9e1d25e48f5286d8ef7d6a5" style="width: 100.0%; height: 100.0%;">Событие ID: 197002020001<br>Страна: United States<br>Город: New York City</div>`)[0];
+                popup_ce403b953b46a99ebafda0179d3eaacc.setContent(html_0275cda6d9e1d25e48f5286d8ef7d6a5);
+            
+        
+
+        circle_marker_e7d566e8312486c0852f07b5191c6bdd.bindPopup(popup_ce403b953b46a99ebafda0179d3eaacc)
+        ;
+
+        
+    
+    
+            var circle_marker_01391c99a2d5a12abbfcfb1faaebf4ea = L.circleMarker(
+                [40.697132, -73.931351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_343ddad06738d77287e9b87bbd329430 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_297e95a2efe318d6f16fbaf3c48559ed = $(`<div id="html_297e95a2efe318d6f16fbaf3c48559ed" style="width: 100.0%; height: 100.0%;">Событие ID: 197002030001<br>Страна: United States<br>Город: New York City</div>`)[0];
+                popup_343ddad06738d77287e9b87bbd329430.setContent(html_297e95a2efe318d6f16fbaf3c48559ed);
+            
+        
+
+        circle_marker_01391c99a2d5a12abbfcfb1faaebf4ea.bindPopup(popup_343ddad06738d77287e9b87bbd329430)
+        ;
+
+        
+    
+    
+            var circle_marker_08c5fc3852ae9ba211f73e9a10143f11 = L.circleMarker(
+                [40.697132, -73.931351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_ff350c878bc5d7bf28cfd8c493f1ff36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2475e749afd60028714661d81f69b801 = $(`<div id="html_2475e749afd60028714661d81f69b801" style="width: 100.0%; height: 100.0%;">Событие ID: 197002030002<br>Страна: United States<br>Город: New York City</div>`)[0];
+                popup_ff350c878bc5d7bf28cfd8c493f1ff36.setContent(html_2475e749afd60028714661d81f69b801);
+            
+        
+
+        circle_marker_08c5fc3852ae9ba211f73e9a10143f11.bindPopup(popup_ff350c878bc5d7bf28cfd8c493f1ff36)
+        ;
+
+        
+    
+    
+            var circle_marker_c82e621e977b9de775305bcb7ee75d5c = L.circleMarker(
+                [41.084195, -81.514059],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_a4fae9155586ae5b05e35dc2ebdcc0b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8f6d2fb9754d65e4cf5b659f827023c = $(`<div id="html_d8f6d2fb9754d65e4cf5b659f827023c" style="width: 100.0%; height: 100.0%;">Событие ID: 197002040001<br>Страна: United States<br>Город: Akron</div>`)[0];
+                popup_a4fae9155586ae5b05e35dc2ebdcc0b4.setContent(html_d8f6d2fb9754d65e4cf5b659f827023c);
+            
+        
+
+        circle_marker_c82e621e977b9de775305bcb7ee75d5c.bindPopup(popup_a4fae9155586ae5b05e35dc2ebdcc0b4)
+        ;
+
+        
+    
+    
+            var circle_marker_6a7284796de7caa37618ec356c4af5ac = L.circleMarker(
+                [39.758968, -104.876305],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_193444678cb6d6a9b0a6edb563fb98a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31b0c2c2d5d7b547a2a91b7c914014cd = $(`<div id="html_31b0c2c2d5d7b547a2a91b7c914014cd" style="width: 100.0%; height: 100.0%;">Событие ID: 197002060001<br>Страна: United States<br>Город: Denver</div>`)[0];
+                popup_193444678cb6d6a9b0a6edb563fb98a9.setContent(html_31b0c2c2d5d7b547a2a91b7c914014cd);
+            
+        
+
+        circle_marker_6a7284796de7caa37618ec356c4af5ac.bindPopup(popup_193444678cb6d6a9b0a6edb563fb98a9)
+        ;
+
+        
+    
+    
+            var circle_marker_69184a633a55a4aadf7d9f772e4275d3 = L.circleMarker(
+                [47.610786, -122.331306],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_231cd4aea5b664cf815b0387ab35fa59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9325dadbc6234204f2b550696c96f424 = $(`<div id="html_9325dadbc6234204f2b550696c96f424" style="width: 100.0%; height: 100.0%;">Событие ID: 197002060002<br>Страна: United States<br>Город: Seattle</div>`)[0];
+                popup_231cd4aea5b664cf815b0387ab35fa59.setContent(html_9325dadbc6234204f2b550696c96f424);
+            
+        
+
+        circle_marker_69184a633a55a4aadf7d9f772e4275d3.bindPopup(popup_231cd4aea5b664cf815b0387ab35fa59)
+        ;
+
+        
+    
+    
+            var circle_marker_fa1f0e8f270de8dd5c78a34fa0fb2d4e = L.circleMarker(
+                [47.610786, -122.331306],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_db6ddc306a57991009aaf36e7dc16f02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d35d50d2e57a0baffa9e297a8d2a8dd = $(`<div id="html_5d35d50d2e57a0baffa9e297a8d2a8dd" style="width: 100.0%; height: 100.0%;">Событие ID: 197002060003<br>Страна: United States<br>Город: Seattle</div>`)[0];
+                popup_db6ddc306a57991009aaf36e7dc16f02.setContent(html_5d35d50d2e57a0baffa9e297a8d2a8dd);
+            
+        
+
+        circle_marker_fa1f0e8f270de8dd5c78a34fa0fb2d4e.bindPopup(popup_db6ddc306a57991009aaf36e7dc16f02)
+        ;
+
+        
+    
+    
+            var circle_marker_8a11d74c6183aeb776c4c455d6fe2b4a = L.circleMarker(
+                [18.460791, -66.264884],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_f2d68d6f68edd913d3a66c319b5513cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e4858cae7bfe23e1a250ea6f30c0102 = $(`<div id="html_1e4858cae7bfe23e1a250ea6f30c0102" style="width: 100.0%; height: 100.0%;">Событие ID: 197002060004<br>Страна: United States<br>Город: Dorado</div>`)[0];
+                popup_f2d68d6f68edd913d3a66c319b5513cd.setContent(html_1e4858cae7bfe23e1a250ea6f30c0102);
+            
+        
+
+        circle_marker_8a11d74c6183aeb776c4c455d6fe2b4a.bindPopup(popup_f2d68d6f68edd913d3a66c319b5513cd)
+        ;
+
+        
+    
+    
+            var circle_marker_3e771b4373112bc70faa363abade84eb = L.circleMarker(
+                [18.386932, -66.061127],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_75dae34df04db3affa62a56a569ad510 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ccafb6602139b31c77ad77ebf5c0e8c = $(`<div id="html_0ccafb6602139b31c77ad77ebf5c0e8c" style="width: 100.0%; height: 100.0%;">Событие ID: 197002060005<br>Страна: United States<br>Город: Rio Piedras</div>`)[0];
+                popup_75dae34df04db3affa62a56a569ad510.setContent(html_0ccafb6602139b31c77ad77ebf5c0e8c);
+            
+        
+
+        circle_marker_3e771b4373112bc70faa363abade84eb.bindPopup(popup_75dae34df04db3affa62a56a569ad510)
+        ;
+
+        
+    
+    
+            var circle_marker_bbce0d273db5a1f533cc12e6d5e8ed8a = L.circleMarker(
+                [18.441963, -66.026316],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_4393ae95826f08cc0e9dcaf71fce0d75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04e29e3f482711e8c438a1c45c76739d = $(`<div id="html_04e29e3f482711e8c438a1c45c76739d" style="width: 100.0%; height: 100.0%;">Событие ID: 197002060006<br>Страна: United States<br>Город: Carolina</div>`)[0];
+                popup_4393ae95826f08cc0e9dcaf71fce0d75.setContent(html_04e29e3f482711e8c438a1c45c76739d);
+            
+        
+
+        circle_marker_bbce0d273db5a1f533cc12e6d5e8ed8a.bindPopup(popup_4393ae95826f08cc0e9dcaf71fce0d75)
+        ;
+
+        
+    
+    
+            var circle_marker_1293b97a29c7f0f77b9f0cfc36752419 = L.circleMarker(
+                [42.3505, -71.105399],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_846edcc2838e8431d5c442ce5ea31f8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db754e1d3f713e2b0bca8622149ebb91 = $(`<div id="html_db754e1d3f713e2b0bca8622149ebb91" style="width: 100.0%; height: 100.0%;">Событие ID: 197002060007<br>Страна: United States<br>Город: Boston</div>`)[0];
+                popup_846edcc2838e8431d5c442ce5ea31f8c.setContent(html_db754e1d3f713e2b0bca8622149ebb91);
+            
+        
+
+        circle_marker_1293b97a29c7f0f77b9f0cfc36752419.bindPopup(popup_846edcc2838e8431d5c442ce5ea31f8c)
+        ;
+
+        
+    
+    
+            var circle_marker_57722ae05474933a1f89a5ab6b451021 = L.circleMarker(
+                [42.838355, -88.743224],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_445b9e300d0473fd493245db38f37b95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4fc51c364129b232a142e808c6e60f3 = $(`<div id="html_a4fc51c364129b232a142e808c6e60f3" style="width: 100.0%; height: 100.0%;">Событие ID: 197002070003<br>Страна: United States<br>Город: Whitewater</div>`)[0];
+                popup_445b9e300d0473fd493245db38f37b95.setContent(html_a4fc51c364129b232a142e808c6e60f3);
+            
+        
+
+        circle_marker_57722ae05474933a1f89a5ab6b451021.bindPopup(popup_445b9e300d0473fd493245db38f37b95)
+        ;
+
+        
+    
+    
+            var circle_marker_bb571dbf78a3125898616867fdbc53e9 = L.circleMarker(
+                [40.697132, -73.931351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_691ada6f676720921f74e06506e31f31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36efcb37b4a03b565cd51a1ad446398d = $(`<div id="html_36efcb37b4a03b565cd51a1ad446398d" style="width: 100.0%; height: 100.0%;">Событие ID: 197002080001<br>Страна: United States<br>Город: New York City</div>`)[0];
+                popup_691ada6f676720921f74e06506e31f31.setContent(html_36efcb37b4a03b565cd51a1ad446398d);
+            
+        
+
+        circle_marker_bb571dbf78a3125898616867fdbc53e9.bindPopup(popup_691ada6f676720921f74e06506e31f31)
+        ;
+
+        
+    
+    
+            var circle_marker_354e05ac19971d9778c336d11a0244c0 = L.circleMarker(
+                [40.697132, -73.931351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_6968c2be934acf3994a4c55f10bdb307 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36d822c2ed61fb19a6418be0ad7b108f = $(`<div id="html_36d822c2ed61fb19a6418be0ad7b108f" style="width: 100.0%; height: 100.0%;">Событие ID: 197002080002<br>Страна: United States<br>Город: New York City</div>`)[0];
+                popup_6968c2be934acf3994a4c55f10bdb307.setContent(html_36d822c2ed61fb19a6418be0ad7b108f);
+            
+        
+
+        circle_marker_354e05ac19971d9778c336d11a0244c0.bindPopup(popup_6968c2be934acf3994a4c55f10bdb307)
+        ;
+
+        
+    
+    
+            var circle_marker_8a03a6badf55cfb7bad894bbe519a9d9 = L.circleMarker(
+                [40.697132, -73.931351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_b26c55304e46944bd0ed73f76a5b0725 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe51d7dcd369568e390b468a32ee7dee = $(`<div id="html_fe51d7dcd369568e390b468a32ee7dee" style="width: 100.0%; height: 100.0%;">Событие ID: 197002090003<br>Страна: United States<br>Город: New York City</div>`)[0];
+                popup_b26c55304e46944bd0ed73f76a5b0725.setContent(html_fe51d7dcd369568e390b468a32ee7dee);
+            
+        
+
+        circle_marker_8a03a6badf55cfb7bad894bbe519a9d9.bindPopup(popup_b26c55304e46944bd0ed73f76a5b0725)
+        ;
+
+        
+    
+    
+            var circle_marker_12ceb3ab402d9ec9914022a09b889054 = L.circleMarker(
+                [39.07859, -84.179414],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_b25239df27fdec7d1b507b60ee042cd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_876313941f8824311d0769783f9dd28f = $(`<div id="html_876313941f8824311d0769783f9dd28f" style="width: 100.0%; height: 100.0%;">Событие ID: 197002090004<br>Страна: United States<br>Город: Batavia</div>`)[0];
+                popup_b25239df27fdec7d1b507b60ee042cd5.setContent(html_876313941f8824311d0769783f9dd28f);
+            
+        
+
+        circle_marker_12ceb3ab402d9ec9914022a09b889054.bindPopup(popup_b25239df27fdec7d1b507b60ee042cd5)
+        ;
+
+        
+    
+    
+            var circle_marker_4ec1e14ed785619ef236fa1d1d453cd8 = L.circleMarker(
+                [48.139126, 11.580186],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_f1a48b40cf4d2f3a45ecb123d350e142 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46652efe9884b2aa33b17e79b1fece80 = $(`<div id="html_46652efe9884b2aa33b17e79b1fece80" style="width: 100.0%; height: 100.0%;">Событие ID: 197002100001<br>Страна: West Germany (FRG)<br>Город: Munich</div>`)[0];
+                popup_f1a48b40cf4d2f3a45ecb123d350e142.setContent(html_46652efe9884b2aa33b17e79b1fece80);
+            
+        
+
+        circle_marker_4ec1e14ed785619ef236fa1d1d453cd8.bindPopup(popup_f1a48b40cf4d2f3a45ecb123d350e142)
+        ;
+
+        
+    
+    
+            var circle_marker_b3d228e8c945ddf0fe8cfb40f27715a5 = L.circleMarker(
+                [42.263414, -83.665281],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_57a726bf1304b57c601c35dc382fa866 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c92750eff184ad5f4a94d0f7a0df649a = $(`<div id="html_c92750eff184ad5f4a94d0f7a0df649a" style="width: 100.0%; height: 100.0%;">Событие ID: 197002110001<br>Страна: United States<br>Город: Ypsilanti</div>`)[0];
+                popup_57a726bf1304b57c601c35dc382fa866.setContent(html_c92750eff184ad5f4a94d0f7a0df649a);
+            
+        
+
+        circle_marker_b3d228e8c945ddf0fe8cfb40f27715a5.bindPopup(popup_57a726bf1304b57c601c35dc382fa866)
+        ;
+
+        
+    
+    
+            var circle_marker_e33e7d671e7f921e2cb96082309bc7bd = L.circleMarker(
+                [37.874043, -122.280022],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_80f45e8472a3dc02b8fe2fc24fce3c7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8ba722d0b715ebf3b8af3dacf4b229e = $(`<div id="html_e8ba722d0b715ebf3b8af3dacf4b229e" style="width: 100.0%; height: 100.0%;">Событие ID: 197002130001<br>Страна: United States<br>Город: Berkeley</div>`)[0];
+                popup_80f45e8472a3dc02b8fe2fc24fce3c7d.setContent(html_e8ba722d0b715ebf3b8af3dacf4b229e);
+            
+        
+
+        circle_marker_e33e7d671e7f921e2cb96082309bc7bd.bindPopup(popup_80f45e8472a3dc02b8fe2fc24fce3c7d)
+        ;
+
+        
+    
+    
+            var circle_marker_88103ee1d65b4881f28a92fa5fbc8910 = L.circleMarker(
+                [48.139126, 11.580186],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_79c78260aab2365bbaa39a77042d6ff5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a6f8777bfcff8375765dbff0cd617fe = $(`<div id="html_3a6f8777bfcff8375765dbff0cd617fe" style="width: 100.0%; height: 100.0%;">Событие ID: 197002130002<br>Страна: West Germany (FRG)<br>Город: Munich</div>`)[0];
+                popup_79c78260aab2365bbaa39a77042d6ff5.setContent(html_3a6f8777bfcff8375765dbff0cd617fe);
+            
+        
+
+        circle_marker_88103ee1d65b4881f28a92fa5fbc8910.bindPopup(popup_79c78260aab2365bbaa39a77042d6ff5)
+        ;
+
+        
+    
+    
+            var circle_marker_5e04b496ee121cc3ead5c2fe5a612ea7 = L.circleMarker(
+                [37.874043, -122.280022],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_e69b42bc3dec0972cf28232f9a0b6b57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe4d57bb923c095a372ab37115ca9e34 = $(`<div id="html_fe4d57bb923c095a372ab37115ca9e34" style="width: 100.0%; height: 100.0%;">Событие ID: 197002130003<br>Страна: United States<br>Город: Berkeley</div>`)[0];
+                popup_e69b42bc3dec0972cf28232f9a0b6b57.setContent(html_fe4d57bb923c095a372ab37115ca9e34);
+            
+        
+
+        circle_marker_5e04b496ee121cc3ead5c2fe5a612ea7.bindPopup(popup_e69b42bc3dec0972cf28232f9a0b6b57)
+        ;
+
+        
+    
+    
+            var circle_marker_6bca1d47f95b81719cbd974e25e01cf0 = L.circleMarker(
+                [40.697132, -73.931351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_9d1a2da3d43588f65c3930023dc54f46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd0d82c631868cf6b825ea93a76ddfe2 = $(`<div id="html_fd0d82c631868cf6b825ea93a76ddfe2" style="width: 100.0%; height: 100.0%;">Событие ID: 197002150001<br>Страна: United States<br>Город: New York City</div>`)[0];
+                popup_9d1a2da3d43588f65c3930023dc54f46.setContent(html_fd0d82c631868cf6b825ea93a76ddfe2);
+            
+        
+
+        circle_marker_6bca1d47f95b81719cbd974e25e01cf0.bindPopup(popup_9d1a2da3d43588f65c3930023dc54f46)
+        ;
+
+        
+    
+    
+            var circle_marker_ca4f24e2c24aa2da93f0cf74e6cf416e = L.circleMarker(
+                [44.04483, -123.072606],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_2f9591236496b357fd93ab1e33709fb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_807482e3a45d8f9f5eb0f25257d95811 = $(`<div id="html_807482e3a45d8f9f5eb0f25257d95811" style="width: 100.0%; height: 100.0%;">Событие ID: 197002150002<br>Страна: United States<br>Город: Eugene</div>`)[0];
+                popup_2f9591236496b357fd93ab1e33709fb7.setContent(html_807482e3a45d8f9f5eb0f25257d95811);
+            
+        
+
+        circle_marker_ca4f24e2c24aa2da93f0cf74e6cf416e.bindPopup(popup_2f9591236496b357fd93ab1e33709fb7)
+        ;
+
+        
+    
+    
+            var circle_marker_f094c6abae2627579c03040bcaf1e779 = L.circleMarker(
+                [37.755363, -122.443352],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_dc292f4b72f51e8113537614fbed45ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fce2f0ec265ba12c3957a7c4f9917455 = $(`<div id="html_fce2f0ec265ba12c3957a7c4f9917455" style="width: 100.0%; height: 100.0%;">Событие ID: 197002160001<br>Страна: United States<br>Город: San Francisco</div>`)[0];
+                popup_dc292f4b72f51e8113537614fbed45ef.setContent(html_fce2f0ec265ba12c3957a7c4f9917455);
+            
+        
+
+        circle_marker_f094c6abae2627579c03040bcaf1e779.bindPopup(popup_dc292f4b72f51e8113537614fbed45ef)
+        ;
+
+        
+    
+    
+            var circle_marker_a496cf467602f56d0a1bfe5453b4a68d = L.circleMarker(
+                [37.874043, -122.280022],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_6a81d35f6eb3dea34ce493856bc3d424 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_036ff7ffb88c9a9abf9e7c4b0294d314 = $(`<div id="html_036ff7ffb88c9a9abf9e7c4b0294d314" style="width: 100.0%; height: 100.0%;">Событие ID: 197002160002<br>Страна: United States<br>Город: Berkeley</div>`)[0];
+                popup_6a81d35f6eb3dea34ce493856bc3d424.setContent(html_036ff7ffb88c9a9abf9e7c4b0294d314);
+            
+        
+
+        circle_marker_a496cf467602f56d0a1bfe5453b4a68d.bindPopup(popup_6a81d35f6eb3dea34ce493856bc3d424)
+        ;
+
+        
+    
+    
+            var circle_marker_3d0ec2e9c3a9d5be246600a9e2f09947 = L.circleMarker(
+                [37.874043, -122.280022],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_16bcbd57ba058e0c612883ddaedf3038 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f0676af80f36b3603a93e68f2976e53 = $(`<div id="html_0f0676af80f36b3603a93e68f2976e53" style="width: 100.0%; height: 100.0%;">Событие ID: 197002160003<br>Страна: United States<br>Город: Berkeley</div>`)[0];
+                popup_16bcbd57ba058e0c612883ddaedf3038.setContent(html_0f0676af80f36b3603a93e68f2976e53);
+            
+        
+
+        circle_marker_3d0ec2e9c3a9d5be246600a9e2f09947.bindPopup(popup_16bcbd57ba058e0c612883ddaedf3038)
+        ;
+
+        
+    
+    
+            var circle_marker_619b3e6c3e2775b2e1d1c6d42d509f73 = L.circleMarker(
+                [37.755363, -122.443352],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_574ea3ac8ef9b83275b93de1472432d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbb270eea40845e21f60c5f0fa74d18b = $(`<div id="html_bbb270eea40845e21f60c5f0fa74d18b" style="width: 100.0%; height: 100.0%;">Событие ID: 197002160004<br>Страна: United States<br>Город: San Francisco</div>`)[0];
+                popup_574ea3ac8ef9b83275b93de1472432d4.setContent(html_bbb270eea40845e21f60c5f0fa74d18b);
+            
+        
+
+        circle_marker_619b3e6c3e2775b2e1d1c6d42d509f73.bindPopup(popup_574ea3ac8ef9b83275b93de1472432d4)
+        ;
+
+        
+    
+    
+            var circle_marker_f4111a1c0c73dce359117dc46c317be3 = L.circleMarker(
+                [37.791927, -122.225906],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_828d2f09ade976d4f6c00f6a84f186b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66f043d8ac6896e3f50a846bdf4e7852 = $(`<div id="html_66f043d8ac6896e3f50a846bdf4e7852" style="width: 100.0%; height: 100.0%;">Событие ID: 197002170001<br>Страна: United States<br>Город: Oakland</div>`)[0];
+                popup_828d2f09ade976d4f6c00f6a84f186b4.setContent(html_66f043d8ac6896e3f50a846bdf4e7852);
+            
+        
+
+        circle_marker_f4111a1c0c73dce359117dc46c317be3.bindPopup(popup_828d2f09ade976d4f6c00f6a84f186b4)
+        ;
+
+        
+    
+    
+            var circle_marker_ccac05fbeab86e6c59fccf79aaff2862 = L.circleMarker(
+                [39.334825, -77.431653],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_f160348acc4f7234096dc60d1ce3fbe0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4a8d79ba84c9e84ae722569045ffbcd = $(`<div id="html_b4a8d79ba84c9e84ae722569045ffbcd" style="width: 100.0%; height: 100.0%;">Событие ID: 197002170002<br>Страна: United States<br>Город: Buckeystown</div>`)[0];
+                popup_f160348acc4f7234096dc60d1ce3fbe0.setContent(html_b4a8d79ba84c9e84ae722569045ffbcd);
+            
+        
+
+        circle_marker_ccac05fbeab86e6c59fccf79aaff2862.bindPopup(popup_f160348acc4f7234096dc60d1ce3fbe0)
+        ;
+
+        
+    
+    
+            var circle_marker_ed11734da0ebd20ed6240efbf60f1ae0 = L.circleMarker(
+                [30.493919, -90.132512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_671014556ee6f387662e76b74d8f1ac3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3da9b43bbf56d5cb695ffda7bd99c514 = $(`<div id="html_3da9b43bbf56d5cb695ffda7bd99c514" style="width: 100.0%; height: 100.0%;">Событие ID: 197002170003<br>Страна: United States<br>Город: Covington</div>`)[0];
+                popup_671014556ee6f387662e76b74d8f1ac3.setContent(html_3da9b43bbf56d5cb695ffda7bd99c514);
+            
+        
+
+        circle_marker_ed11734da0ebd20ed6240efbf60f1ae0.bindPopup(popup_671014556ee6f387662e76b74d8f1ac3)
+        ;
+
+        
+    
+    
+            var circle_marker_6d0fbd410209a8357e73ece739b79c26 = L.circleMarker(
+                [47.610786, -122.331306],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_87ba04c75cd2ca6a29098fc0181b82b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3610af70e228faabfd6762fa6453c8bb = $(`<div id="html_3610af70e228faabfd6762fa6453c8bb" style="width: 100.0%; height: 100.0%;">Событие ID: 197002170004<br>Страна: United States<br>Город: Seattle</div>`)[0];
+                popup_87ba04c75cd2ca6a29098fc0181b82b6.setContent(html_3610af70e228faabfd6762fa6453c8bb);
+            
+        
+
+        circle_marker_6d0fbd410209a8357e73ece739b79c26.bindPopup(popup_87ba04c75cd2ca6a29098fc0181b82b6)
+        ;
+
+        
+    
+    
+            var circle_marker_580a0dd033977d33be46499cdf2eb633 = L.circleMarker(
+                [41.479561, -81.675461],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_2a58bf0ca75cfef65ce9f67e75d9e7e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f11d17523fdf0cd784bff65f29a2ea1c = $(`<div id="html_f11d17523fdf0cd784bff65f29a2ea1c" style="width: 100.0%; height: 100.0%;">Событие ID: 197002180002<br>Страна: United States<br>Город: Cleveland</div>`)[0];
+                popup_2a58bf0ca75cfef65ce9f67e75d9e7e6.setContent(html_f11d17523fdf0cd784bff65f29a2ea1c);
+            
+        
+
+        circle_marker_580a0dd033977d33be46499cdf2eb633.bindPopup(popup_2a58bf0ca75cfef65ce9f67e75d9e7e6)
+        ;
+
+        
+    
+    
+            var circle_marker_fada903c021e42b5d54f2284a200d649 = L.circleMarker(
+                [38.10083, -122.254954],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_1544d8c8936ec83dda50f8191b06b09c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb3fa64bbc7f50ce698be77283d971aa = $(`<div id="html_eb3fa64bbc7f50ce698be77283d971aa" style="width: 100.0%; height: 100.0%;">Событие ID: 197002180003<br>Страна: United States<br>Город: Vallejo</div>`)[0];
+                popup_1544d8c8936ec83dda50f8191b06b09c.setContent(html_eb3fa64bbc7f50ce698be77283d971aa);
+            
+        
+
+        circle_marker_fada903c021e42b5d54f2284a200d649.bindPopup(popup_1544d8c8936ec83dda50f8191b06b09c)
+        ;
+
+        
+    
+    
+            var circle_marker_3723938f3bcbd8a6b94513a5d945230f = L.circleMarker(
+                [41.763325, -72.674069],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_86faa70e30dd618b58edf416fa68f24f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa702506a9774f8c72bf71b75c6bdc4c = $(`<div id="html_fa702506a9774f8c72bf71b75c6bdc4c" style="width: 100.0%; height: 100.0%;">Событие ID: 197002200001<br>Страна: United States<br>Город: Hartford</div>`)[0];
+                popup_86faa70e30dd618b58edf416fa68f24f.setContent(html_fa702506a9774f8c72bf71b75c6bdc4c);
+            
+        
+
+        circle_marker_3723938f3bcbd8a6b94513a5d945230f.bindPopup(popup_86faa70e30dd618b58edf416fa68f24f)
+        ;
+
+        
+    
+    
+            var circle_marker_65d1da888a4cabb0f203a034f272b5be = L.circleMarker(
+                [40.697132, -73.931351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_4634162a1c4036cf2fafbf1ce63c1c33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d016a21550a1e74865d78a0194e67e1f = $(`<div id="html_d016a21550a1e74865d78a0194e67e1f" style="width: 100.0%; height: 100.0%;">Событие ID: 197002200002<br>Страна: United States<br>Город: New York City</div>`)[0];
+                popup_4634162a1c4036cf2fafbf1ce63c1c33.setContent(html_d016a21550a1e74865d78a0194e67e1f);
+            
+        
+
+        circle_marker_65d1da888a4cabb0f203a034f272b5be.bindPopup(popup_4634162a1c4036cf2fafbf1ce63c1c33)
+        ;
+
+        
+    
+    
+            var circle_marker_c0734dc1b3c899538bda200e51c0c2a2 = L.circleMarker(
+                [47.610786, -122.331306],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_6f5613d3e3c6f0b6703c47fb145df8a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f84a7bb7e7749d8b7f7ea839b28b9c75 = $(`<div id="html_f84a7bb7e7749d8b7f7ea839b28b9c75" style="width: 100.0%; height: 100.0%;">Событие ID: 197002200003<br>Страна: United States<br>Город: Seattle</div>`)[0];
+                popup_6f5613d3e3c6f0b6703c47fb145df8a6.setContent(html_f84a7bb7e7749d8b7f7ea839b28b9c75);
+            
+        
+
+        circle_marker_c0734dc1b3c899538bda200e51c0c2a2.bindPopup(popup_6f5613d3e3c6f0b6703c47fb145df8a6)
+        ;
+
+        
+    
+    
+            var circle_marker_f38c6a776e68016ed56ad5167e395665 = L.circleMarker(
+                [50.11797, 8.644191],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_2304ab405576a9de9acd031bf2974523 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f56a52f8a154fbcb5f152cd5fe42354b = $(`<div id="html_f56a52f8a154fbcb5f152cd5fe42354b" style="width: 100.0%; height: 100.0%;">Событие ID: 197002210001<br>Страна: West Germany (FRG)<br>Город: Frankfurt</div>`)[0];
+                popup_2304ab405576a9de9acd031bf2974523.setContent(html_f56a52f8a154fbcb5f152cd5fe42354b);
+            
+        
+
+        circle_marker_f38c6a776e68016ed56ad5167e395665.bindPopup(popup_2304ab405576a9de9acd031bf2974523)
+        ;
+
+        
+    
+    
+            var circle_marker_c18457eaae411aad66f9f45b69af45fe = L.circleMarker(
+                [47.36865, 8.539182],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_4d3841e4d252fdff1e71190a181f2ed9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbdd237918701e10fa83feed93929912 = $(`<div id="html_dbdd237918701e10fa83feed93929912" style="width: 100.0%; height: 100.0%;">Событие ID: 197002210002<br>Страна: Switzerland<br>Город: Zurich</div>`)[0];
+                popup_4d3841e4d252fdff1e71190a181f2ed9.setContent(html_dbdd237918701e10fa83feed93929912);
+            
+        
+
+        circle_marker_c18457eaae411aad66f9f45b69af45fe.bindPopup(popup_4d3841e4d252fdff1e71190a181f2ed9)
+        ;
+
+        
+    
+    
+            var circle_marker_052876e583bac67b648182a73e01950c = L.circleMarker(
+                [40.697132, -73.931351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_3a0548e0c78b20a417496e116827c4d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2b8fccb14197fc5d2daadcc18f026a3 = $(`<div id="html_a2b8fccb14197fc5d2daadcc18f026a3" style="width: 100.0%; height: 100.0%;">Событие ID: 197002210003<br>Страна: United States<br>Город: New York City</div>`)[0];
+                popup_3a0548e0c78b20a417496e116827c4d5.setContent(html_a2b8fccb14197fc5d2daadcc18f026a3);
+            
+        
+
+        circle_marker_052876e583bac67b648182a73e01950c.bindPopup(popup_3a0548e0c78b20a417496e116827c4d5)
+        ;
+
+        
+    
+    
+            var circle_marker_5c309d798876846e74bc89e6aa5e0328 = L.circleMarker(
+                [40.697132, -73.931351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_a65179f5f5ada802ab2e90f22b18f336 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0bddc08e04fde58acfe2f7f8c16d57f3 = $(`<div id="html_0bddc08e04fde58acfe2f7f8c16d57f3" style="width: 100.0%; height: 100.0%;">Событие ID: 197002210004<br>Страна: United States<br>Город: New York City</div>`)[0];
+                popup_a65179f5f5ada802ab2e90f22b18f336.setContent(html_0bddc08e04fde58acfe2f7f8c16d57f3);
+            
+        
+
+        circle_marker_5c309d798876846e74bc89e6aa5e0328.bindPopup(popup_a65179f5f5ada802ab2e90f22b18f336)
+        ;
+
+        
+    
+    
+            var circle_marker_30eefeca7beae700b7298a379d17840c = L.circleMarker(
+                [40.697132, -73.931351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_a22d561604d1605fb88a4f19f173d27a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcd4eee226c7d93857aa1a4f353302b2 = $(`<div id="html_fcd4eee226c7d93857aa1a4f353302b2" style="width: 100.0%; height: 100.0%;">Событие ID: 197002210005<br>Страна: United States<br>Город: New York City</div>`)[0];
+                popup_a22d561604d1605fb88a4f19f173d27a.setContent(html_fcd4eee226c7d93857aa1a4f353302b2);
+            
+        
+
+        circle_marker_30eefeca7beae700b7298a379d17840c.bindPopup(popup_a22d561604d1605fb88a4f19f173d27a)
+        ;
+
+        
+    
+    
+            var circle_marker_d256e4de21d19c31329632038d704269 = L.circleMarker(
+                [39.758968, -104.876305],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_686ab9efdabeb91cbc8cf77069c40809 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_450246027364a68b57e3c6362f5c500d = $(`<div id="html_450246027364a68b57e3c6362f5c500d" style="width: 100.0%; height: 100.0%;">Событие ID: 197002210006<br>Страна: United States<br>Город: Denver</div>`)[0];
+                popup_686ab9efdabeb91cbc8cf77069c40809.setContent(html_450246027364a68b57e3c6362f5c500d);
+            
+        
+
+        circle_marker_d256e4de21d19c31329632038d704269.bindPopup(popup_686ab9efdabeb91cbc8cf77069c40809)
+        ;
+
+        
+    
+    
+            var circle_marker_17f85d3aa56f7c6840d51f10c091e3ce = L.circleMarker(
+                [42.455233, -76.475847],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_4bf3f63aed7433e203ff37eb659ca0d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fe2e8a0de7c29ff56bd31d7fd083f82 = $(`<div id="html_4fe2e8a0de7c29ff56bd31d7fd083f82" style="width: 100.0%; height: 100.0%;">Событие ID: 197002220001<br>Страна: United States<br>Город: Ithaca</div>`)[0];
+                popup_4bf3f63aed7433e203ff37eb659ca0d5.setContent(html_4fe2e8a0de7c29ff56bd31d7fd083f82);
+            
+        
+
+        circle_marker_17f85d3aa56f7c6840d51f10c091e3ce.bindPopup(popup_4bf3f63aed7433e203ff37eb659ca0d5)
+        ;
+
+        
+    
+    
+            var circle_marker_2d4dc78b5f8ffd1639ba20f1d4a5f6a0 = L.circleMarker(
+                [43.287052, -89.724361],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_4e700e990606c5670578bb9d176facfe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5aafcb1cdfd6d524e9e1e21a69408493 = $(`<div id="html_5aafcb1cdfd6d524e9e1e21a69408493" style="width: 100.0%; height: 100.0%;">Событие ID: 197002220002<br>Страна: United States<br>Город: Prairie du Sac</div>`)[0];
+                popup_4e700e990606c5670578bb9d176facfe.setContent(html_5aafcb1cdfd6d524e9e1e21a69408493);
+            
+        
+
+        circle_marker_2d4dc78b5f8ffd1639ba20f1d4a5f6a0.bindPopup(popup_4e700e990606c5670578bb9d176facfe)
+        ;
+
+        
+    
+    
+            var circle_marker_9f997016b319596f6d29aac22684fb0f = L.circleMarker(
+                [42.47031, -96.413949],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_1364f4de03501345dba145ef401bb400 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1748d4d43b7848e6bd7d74ace31e15e = $(`<div id="html_e1748d4d43b7848e6bd7d74ace31e15e" style="width: 100.0%; height: 100.0%;">Событие ID: 197002230001<br>Страна: United States<br>Город: South Sioux City</div>`)[0];
+                popup_1364f4de03501345dba145ef401bb400.setContent(html_e1748d4d43b7848e6bd7d74ace31e15e);
+            
+        
+
+        circle_marker_9f997016b319596f6d29aac22684fb0f.bindPopup(popup_1364f4de03501345dba145ef401bb400)
+        ;
+
+        
+    
+    
+            var circle_marker_f2697a0ad2484f089f0b6e5566a4a71b = L.circleMarker(
+                [42.47031, -96.413949],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_f33e5096e501fe9eb1be476b5e15d1bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70ac37196770a787e4df58b5d1a5702a = $(`<div id="html_70ac37196770a787e4df58b5d1a5702a" style="width: 100.0%; height: 100.0%;">Событие ID: 197002230002<br>Страна: United States<br>Город: South Sioux City</div>`)[0];
+                popup_f33e5096e501fe9eb1be476b5e15d1bb.setContent(html_70ac37196770a787e4df58b5d1a5702a);
+            
+        
+
+        circle_marker_f2697a0ad2484f089f0b6e5566a4a71b.bindPopup(popup_f33e5096e501fe9eb1be476b5e15d1bb)
+        ;
+
+        
+    
+    
+            var circle_marker_acd54b04d6e3cd768cb9f0675e92f8e6 = L.circleMarker(
+                [42.47031, -96.413949],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_62c7a1aa804d9bd6a8c3e2c745dfc0d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c094d2002742fce053ebb3a3686f315f = $(`<div id="html_c094d2002742fce053ebb3a3686f315f" style="width: 100.0%; height: 100.0%;">Событие ID: 197002230003<br>Страна: United States<br>Город: South Sioux City</div>`)[0];
+                popup_62c7a1aa804d9bd6a8c3e2c745dfc0d5.setContent(html_c094d2002742fce053ebb3a3686f315f);
+            
+        
+
+        circle_marker_acd54b04d6e3cd768cb9f0675e92f8e6.bindPopup(popup_62c7a1aa804d9bd6a8c3e2c745dfc0d5)
+        ;
+
+        
+    
+    
+            var circle_marker_8b990dfd19842aa9a490d2df3281665e = L.circleMarker(
+                [42.47031, -96.413949],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_43d47d3efd23eaee4ce8fa2c4ebb6514 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62d68c1c4e9b78dbfed442538d39d0a8 = $(`<div id="html_62d68c1c4e9b78dbfed442538d39d0a8" style="width: 100.0%; height: 100.0%;">Событие ID: 197002230004<br>Страна: United States<br>Город: South Sioux City</div>`)[0];
+                popup_43d47d3efd23eaee4ce8fa2c4ebb6514.setContent(html_62d68c1c4e9b78dbfed442538d39d0a8);
+            
+        
+
+        circle_marker_8b990dfd19842aa9a490d2df3281665e.bindPopup(popup_43d47d3efd23eaee4ce8fa2c4ebb6514)
+        ;
+
+        
+    
+    
+            var circle_marker_8f0d7c38fbf13c39ae631ac44b8bc011 = L.circleMarker(
+                [32.222232, -110.925752],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_fd2c45d241cad0f711301a87b74d6a04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d9bd9d989bab453d6bcca84d5798aa6 = $(`<div id="html_9d9bd9d989bab453d6bcca84d5798aa6" style="width: 100.0%; height: 100.0%;">Событие ID: 197002230005<br>Страна: United States<br>Город: Tucson</div>`)[0];
+                popup_fd2c45d241cad0f711301a87b74d6a04.setContent(html_9d9bd9d989bab453d6bcca84d5798aa6);
+            
+        
+
+        circle_marker_8f0d7c38fbf13c39ae631ac44b8bc011.bindPopup(popup_fd2c45d241cad0f711301a87b74d6a04)
+        ;
+
+        
+    
+    
+            var circle_marker_d7a1d520c85f382bf4012c991f1f2393 = L.circleMarker(
+                [39.758968, -104.876305],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_111f801a5f3801dc0415895b765352d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3807a24dc6ef7072116e7a18fc90508f = $(`<div id="html_3807a24dc6ef7072116e7a18fc90508f" style="width: 100.0%; height: 100.0%;">Событие ID: 197002240002<br>Страна: United States<br>Город: Denver</div>`)[0];
+                popup_111f801a5f3801dc0415895b765352d2.setContent(html_3807a24dc6ef7072116e7a18fc90508f);
+            
+        
+
+        circle_marker_d7a1d520c85f382bf4012c991f1f2393.bindPopup(popup_111f801a5f3801dc0415895b765352d2)
+        ;
+
+        
+    
+    
+            var circle_marker_80b322e5d3e7e458afb514488607b690 = L.circleMarker(
+                [40.101952, -88.227161],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_78422a8bb58263ec0a2c80095591cc4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a609f859d3c2ffe7a69e43149043d3b = $(`<div id="html_9a609f859d3c2ffe7a69e43149043d3b" style="width: 100.0%; height: 100.0%;">Событие ID: 197002240003<br>Страна: United States<br>Город: Champaign</div>`)[0];
+                popup_78422a8bb58263ec0a2c80095591cc4c.setContent(html_9a609f859d3c2ffe7a69e43149043d3b);
+            
+        
+
+        circle_marker_80b322e5d3e7e458afb514488607b690.bindPopup(popup_78422a8bb58263ec0a2c80095591cc4c)
+        ;
+
+        
+    
+    
+            var circle_marker_a809403c1de7734979143ebb2533007d = L.circleMarker(
+                [40.007581, -105.265942],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_477cd519348e5455209fc0d47ce366a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70d36dc877013ec0cfa87cc0c31c544d = $(`<div id="html_70d36dc877013ec0cfa87cc0c31c544d" style="width: 100.0%; height: 100.0%;">Событие ID: 197002270001<br>Страна: United States<br>Город: Boulder</div>`)[0];
+                popup_477cd519348e5455209fc0d47ce366a6.setContent(html_70d36dc877013ec0cfa87cc0c31c544d);
+            
+        
+
+        circle_marker_a809403c1de7734979143ebb2533007d.bindPopup(popup_477cd519348e5455209fc0d47ce366a6)
+        ;
+
+        
+    
+    
+            var circle_marker_bdecf8388107faef10628e284e8c24bb = L.circleMarker(
+                [31.530243, 35.094162],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_52003a4d47896d1f99a81be6d92e3cbf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d25d30866f220b64ae21a6d5bca27402 = $(`<div id="html_d25d30866f220b64ae21a6d5bca27402" style="width: 100.0%; height: 100.0%;">Событие ID: 197002280001<br>Страна: Jordan<br>Город: Hebron</div>`)[0];
+                popup_52003a4d47896d1f99a81be6d92e3cbf.setContent(html_d25d30866f220b64ae21a6d5bca27402);
+            
+        
+
+        circle_marker_bdecf8388107faef10628e284e8c24bb.bindPopup(popup_52003a4d47896d1f99a81be6d92e3cbf)
+        ;
+
+        
+    
+    
+            var circle_marker_4b986167f736ba7b231dcd945ffefdac = L.circleMarker(
+                [14.596051, 120.978666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_cc31091bd07a5d9c18eece6037c330b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7775138a217bf9cde50d2b9f7fb986ee = $(`<div id="html_7775138a217bf9cde50d2b9f7fb986ee" style="width: 100.0%; height: 100.0%;">Событие ID: 197003000001<br>Страна: Philippines<br>Город: Manila</div>`)[0];
+                popup_cc31091bd07a5d9c18eece6037c330b1.setContent(html_7775138a217bf9cde50d2b9f7fb986ee);
+            
+        
+
+        circle_marker_4b986167f736ba7b231dcd945ffefdac.bindPopup(popup_cc31091bd07a5d9c18eece6037c330b1)
+        ;
+
+        
+    
+    
+            var circle_marker_6ba5f727c367cd94e5986644f9702636 = L.circleMarker(
+                [41.890961, 12.490069],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_de121ac92c16d598234653853abfe5be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_764599077ac0c5e6365087ea838be0ca = $(`<div id="html_764599077ac0c5e6365087ea838be0ca" style="width: 100.0%; height: 100.0%;">Событие ID: 197003010001<br>Страна: Italy<br>Город: Rome</div>`)[0];
+                popup_de121ac92c16d598234653853abfe5be.setContent(html_764599077ac0c5e6365087ea838be0ca);
+            
+        
+
+        circle_marker_6ba5f727c367cd94e5986644f9702636.bindPopup(popup_de121ac92c16d598234653853abfe5be)
+        ;
+
+        
+    
+    
+            var circle_marker_06607d6414bc98bbbe919de7305b6ec3 = L.circleMarker(
+                [40.007581, -105.265942],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_254aff03aedd96db52db829e36524a3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3a8d473c8d766de6d76a5e4d4c4ad41 = $(`<div id="html_b3a8d473c8d766de6d76a5e4d4c4ad41" style="width: 100.0%; height: 100.0%;">Событие ID: 197003010005<br>Страна: United States<br>Город: Boulder</div>`)[0];
+                popup_254aff03aedd96db52db829e36524a3e.setContent(html_b3a8d473c8d766de6d76a5e4d4c4ad41);
+            
+        
+
+        circle_marker_06607d6414bc98bbbe919de7305b6ec3.bindPopup(popup_254aff03aedd96db52db829e36524a3e)
+        ;
+
+        
+    
+    
+            var circle_marker_b68f1deb2c676a3a56b2c586b9edb0e3 = L.circleMarker(
+                [38.864281, -104.778412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_8bcdda3ea4601bfe19ebd4a67c685aca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9bf44939b7c0349833f930441aea39c7 = $(`<div id="html_9bf44939b7c0349833f930441aea39c7" style="width: 100.0%; height: 100.0%;">Событие ID: 197003010006<br>Страна: United States<br>Город: Colorado Springs</div>`)[0];
+                popup_8bcdda3ea4601bfe19ebd4a67c685aca.setContent(html_9bf44939b7c0349833f930441aea39c7);
+            
+        
+
+        circle_marker_b68f1deb2c676a3a56b2c586b9edb0e3.bindPopup(popup_8bcdda3ea4601bfe19ebd4a67c685aca)
+        ;
+
+        
+    
+    
+            var circle_marker_05bd7237f95c2836077c2ace3d6fadc2 = L.circleMarker(
+                [40.007581, -105.265942],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_c8a4f24884f09bb50120f6839ec474e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_024c12bc9090f40b1102518e2ad109bc = $(`<div id="html_024c12bc9090f40b1102518e2ad109bc" style="width: 100.0%; height: 100.0%;">Событие ID: 197003010007<br>Страна: United States<br>Город: Boulder</div>`)[0];
+                popup_c8a4f24884f09bb50120f6839ec474e8.setContent(html_024c12bc9090f40b1102518e2ad109bc);
+            
+        
+
+        circle_marker_05bd7237f95c2836077c2ace3d6fadc2.bindPopup(popup_c8a4f24884f09bb50120f6839ec474e8)
+        ;
+
+        
+    
+    
+            var circle_marker_a7b9baa2cedcd69a69a88c8e08887a47 = L.circleMarker(
+                [40.014986, -105.270546],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_8948cffffe50aa59a6cd4c87d5a901fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f832e0a406b9855b36bb70074eeb4151 = $(`<div id="html_f832e0a406b9855b36bb70074eeb4151" style="width: 100.0%; height: 100.0%;">Событие ID: 197003010008<br>Страна: United States<br>Город: Boulder</div>`)[0];
+                popup_8948cffffe50aa59a6cd4c87d5a901fb.setContent(html_f832e0a406b9855b36bb70074eeb4151);
+            
+        
+
+        circle_marker_a7b9baa2cedcd69a69a88c8e08887a47.bindPopup(popup_8948cffffe50aa59a6cd4c87d5a901fb)
+        ;
+
+        
+    
+    
+            var circle_marker_da9be195c32ab531221efe739309aa43 = L.circleMarker(
+                [41.479561, -81.675461],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_df6752be2b0ee635666dd5b6f82b9ebe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a62450054e14f35d2ef143750fa36a0f = $(`<div id="html_a62450054e14f35d2ef143750fa36a0f" style="width: 100.0%; height: 100.0%;">Событие ID: 197003020001<br>Страна: United States<br>Город: Cleveland</div>`)[0];
+                popup_df6752be2b0ee635666dd5b6f82b9ebe.setContent(html_a62450054e14f35d2ef143750fa36a0f);
+            
+        
+
+        circle_marker_da9be195c32ab531221efe739309aa43.bindPopup(popup_df6752be2b0ee635666dd5b6f82b9ebe)
+        ;
+
+        
+    
+    
+            var circle_marker_37a8819b7a4e3c6bdb5092cd4dcc328e = L.circleMarker(
+                [39.758968, -104.876305],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_ff3e1124df54b6ec2b16645479d1843d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2345718d20ad4f0aee7e76c74af4f505 = $(`<div id="html_2345718d20ad4f0aee7e76c74af4f505" style="width: 100.0%; height: 100.0%;">Событие ID: 197003030002<br>Страна: United States<br>Город: Denver</div>`)[0];
+                popup_ff3e1124df54b6ec2b16645479d1843d.setContent(html_2345718d20ad4f0aee7e76c74af4f505);
+            
+        
+
+        circle_marker_37a8819b7a4e3c6bdb5092cd4dcc328e.bindPopup(popup_ff3e1124df54b6ec2b16645479d1843d)
+        ;
+
+        
+    
+    
+            var circle_marker_598c4e42505b3e71233fd324721354b7 = L.circleMarker(
+                [47.610786, -122.331306],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_1514bf7d2fbbb344374b66edca66ce7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb4cce859b9bbaf50d35e268e208f9f6 = $(`<div id="html_bb4cce859b9bbaf50d35e268e208f9f6" style="width: 100.0%; height: 100.0%;">Событие ID: 197003030003<br>Страна: United States<br>Город: Seattle</div>`)[0];
+                popup_1514bf7d2fbbb344374b66edca66ce7c.setContent(html_bb4cce859b9bbaf50d35e268e208f9f6);
+            
+        
+
+        circle_marker_598c4e42505b3e71233fd324721354b7.bindPopup(popup_1514bf7d2fbbb344374b66edca66ce7c)
+        ;
+
+        
+    
+    
+            var circle_marker_e34d3a878706aa7607ddec1cb43b2c32 = L.circleMarker(
+                [37.791927, -122.225906],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_d5c10aec47bfb531d4a7d037f2420dd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d646423af1ee26a0df67aff2022f29f9 = $(`<div id="html_d646423af1ee26a0df67aff2022f29f9" style="width: 100.0%; height: 100.0%;">Событие ID: 197003040001<br>Страна: United States<br>Город: Oakland</div>`)[0];
+                popup_d5c10aec47bfb531d4a7d037f2420dd0.setContent(html_d646423af1ee26a0df67aff2022f29f9);
+            
+        
+
+        circle_marker_e34d3a878706aa7607ddec1cb43b2c32.bindPopup(popup_d5c10aec47bfb531d4a7d037f2420dd0)
+        ;
+
+        
+    
+    
+            var circle_marker_fec37dab546fc46dc13adfcac7c85c23 = L.circleMarker(
+                [38.019304, -122.134062],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_ee816326b1ee02a4a4a301415f79e21b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42891df0ce63e02dcb7f78bbe7d24ef4 = $(`<div id="html_42891df0ce63e02dcb7f78bbe7d24ef4" style="width: 100.0%; height: 100.0%;">Событие ID: 197003040002<br>Страна: United States<br>Город: Martinez</div>`)[0];
+                popup_ee816326b1ee02a4a4a301415f79e21b.setContent(html_42891df0ce63e02dcb7f78bbe7d24ef4);
+            
+        
+
+        circle_marker_fec37dab546fc46dc13adfcac7c85c23.bindPopup(popup_ee816326b1ee02a4a4a301415f79e21b)
+        ;
+
+        
+    
+    
+            var circle_marker_bb618a360cf549581ffae3bc6908ec9b = L.circleMarker(
+                [39.758968, -104.876305],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_a3a789fcd85ed156eb9e816b1c21402f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b68b4d35b1aa5d83bd21d426d167f41f = $(`<div id="html_b68b4d35b1aa5d83bd21d426d167f41f" style="width: 100.0%; height: 100.0%;">Событие ID: 197003040003<br>Страна: United States<br>Город: Denver</div>`)[0];
+                popup_a3a789fcd85ed156eb9e816b1c21402f.setContent(html_b68b4d35b1aa5d83bd21d426d167f41f);
+            
+        
+
+        circle_marker_bb618a360cf549581ffae3bc6908ec9b.bindPopup(popup_a3a789fcd85ed156eb9e816b1c21402f)
+        ;
+
+        
+    
+    
+            var circle_marker_2f51970d7c800fdda0ca1378bbfe0bd3 = L.circleMarker(
+                [47.610786, -122.331306],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_107cdfcfbfc955d1fcc1bb42c68f871a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25389d8f0eaed7c84b8edf11907ddf76 = $(`<div id="html_25389d8f0eaed7c84b8edf11907ddf76" style="width: 100.0%; height: 100.0%;">Событие ID: 197003050001<br>Страна: United States<br>Город: Seattle</div>`)[0];
+                popup_107cdfcfbfc955d1fcc1bb42c68f871a.setContent(html_25389d8f0eaed7c84b8edf11907ddf76);
+            
+        
+
+        circle_marker_2f51970d7c800fdda0ca1378bbfe0bd3.bindPopup(popup_107cdfcfbfc955d1fcc1bb42c68f871a)
+        ;
+
+        
+    
+    
+            var circle_marker_a753f131e16298ee214ef019c97880d8 = L.circleMarker(
+                [39.758968, -104.876305],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_10734257bf8801a0b403d053e72d43e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d46093e7e3b5905bad6454b6718c2caa = $(`<div id="html_d46093e7e3b5905bad6454b6718c2caa" style="width: 100.0%; height: 100.0%;">Событие ID: 197003050002<br>Страна: United States<br>Город: Denver</div>`)[0];
+                popup_10734257bf8801a0b403d053e72d43e0.setContent(html_d46093e7e3b5905bad6454b6718c2caa);
+            
+        
+
+        circle_marker_a753f131e16298ee214ef019c97880d8.bindPopup(popup_10734257bf8801a0b403d053e72d43e0)
+        ;
+
+        
+    
+    
+            var circle_marker_6429b12cf89c26185c130a03329c1e11 = L.circleMarker(
+                [18.386932, -66.061127],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_226c941461881d934a9a469b997b8fb0);
+        
+    
+        var popup_cde078683af6938f5e60635cea16783c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dad660834add9a0aa30401ddc39ac840 = $(`<div id="html_dad660834add9a0aa30401ddc39ac840" style="width: 100.0%; height: 100.0%;">Событие ID: 197003050003<br>Страна: United States<br>Город: San Juan</div>`)[0];
+                popup_cde078683af6938f5e60635cea16783c.setContent(html_dad660834add9a0aa30401ddc39ac840);
+            
+        
+
+        circle_marker_6429b12cf89c26185c130a03329c1e11.bindPopup(popup_cde078683af6938f5e60635cea16783c)
+        ;
+
+        
+    
+</script>
+</html>
